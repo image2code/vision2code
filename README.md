@@ -1,8 +1,8 @@
-# Image2Code Reproducibility Repository
+# Image2Code
 
-This is an anonymized, reviewer-facing code repository for reproducing the Image2Code benchmark tables, figures, validation analyses, and ablations. Raw benchmark images are distributed separately through Kaggle; this repository contains code, configs, filtered manifest metadata, compact saved outputs, and small fixtures.
+Code, configs, saved outputs, and scripts for the Image2Code benchmark. Raw benchmark images are distributed separately through Kaggle.
 
-## Quickstart
+## Install
 
 ```bash
 cd image2code
@@ -12,18 +12,23 @@ pip install -e ".[dev]"
 cp .env.example .env
 ```
 
-Use the Kaggle package either through `IMAGE2CODE_DATA_DIR` or `--data_dir`:
+## Data
 
 ```bash
-scripts/download_kaggle_data.sh --data_dir /path/to/kaggle/input/image2code-neurips-2026
-export IMAGE2CODE_DATA_DIR=/path/to/kaggle/input/image2code-neurips-2026
+scripts/download_kaggle_data.sh --data_dir /path/to/kaggle/input/image2code
+export IMAGE2CODE_DATA_DIR=/path/to/kaggle/input/image2code
 python3 scripts/validate_release_data.py --data_dir "$IMAGE2CODE_DATA_DIR"
 scripts/run_smoke_test.sh --data_dir "$IMAGE2CODE_DATA_DIR" --num_samples 3
 ```
 
-Without Kaggle data, `python3 scripts/validate_repo.py` uses `data/fixture_kaggle` for fixture-only validation.
+For a fixture-only check without Kaggle data:
 
-## Reproduce Saved-Output Tables And Figures
+```bash
+python3 scripts/validate_repo.py
+scripts/run_smoke_test.sh --data_dir data/fixture_kaggle --num_samples 3
+```
+
+## Tables And Figures
 
 ```bash
 scripts/reproduce_main_tables.sh
@@ -33,9 +38,9 @@ scripts/reproduce_ablations.sh
 scripts/reproduce_figures.sh
 ```
 
-Outputs are written to `paper_assets/tables/` and `paper_assets/figures/`.
+Outputs go to `paper_assets/tables/` and `paper_assets/figures/`.
 
-## Repo Map
+## Layout
 
 - `configs/`: release counts, model placeholders, rubric and ablation configs.
 - `image2code/data/`: Kaggle loading, manifest validation, split/source metadata.
@@ -44,8 +49,10 @@ Outputs are written to `paper_assets/tables/` and `paper_assets/figures/`.
 - `image2code/generation/`: prompts, code normalization, API/local model generation wrappers.
 - `image2code/metrics/`: embedding similarity baselines and focus texts.
 - `image2code/ablations/`: self-training filters, test-time scaling, tool-use summaries.
-- `image2code/figures/`: paper table and figure builders.
-- `results/paper_outputs/`: compact saved summaries used to regenerate paper tables.
+- `image2code/figures/`: table and figure builders.
+- `results/paper_outputs/`: compact saved summaries used to regenerate tables.
 - `data/fixture_kaggle/`: three-row synthetic Kaggle-layout fixture for CI and smoke checks.
 
-Full model reruns require provider API keys or local checkpoints supplied by the user in `.env`; no keys or private checkpoint paths are included.
+## Full Reruns
+
+Model reruns require provider API keys or local checkpoint paths in `.env`. Training reruns require GPU resources and explicit checkpoint/config paths.

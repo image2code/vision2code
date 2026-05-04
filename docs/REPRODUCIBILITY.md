@@ -16,7 +16,7 @@ python3 scripts/validate_repo.py
 scripts/run_smoke_test.sh --data_dir data/fixture_kaggle --num_samples 3
 ```
 
-## Level 2: Paper Tables And Figures From Saved Outputs
+## Level 2: Tables And Figures From Saved Outputs
 
 ```bash
 scripts/reproduce_main_tables.sh

@@ -30,4 +30,4 @@ Local Hugging Face/Qwen reruns require `HF_TOKEN` if the selected model requires
 
 ## Tool-Use Ablations
 
-LaTeX rendering requires a local TeX installation. Excalidraw rendering requires Node/npm dependencies installed by the reviewer; `node_modules/` is intentionally excluded.
+LaTeX rendering requires a local TeX installation. Excalidraw rendering requires Node/npm dependencies installed locally; `node_modules/` is intentionally excluded.
