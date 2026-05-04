@@ -1,0 +1,10 @@
+model_slug,model,num_failures_filtered_test,hallucinated_api_argument,shape_3d_geometry,other_runtime,syntax_truncation,missing_dependency_file
+qwen35_9b,Qwen3.5-9B,584,89,178,69,237,11
+kimi_k2_5,Kimi-K2.5,289,85,47,32,57,68
+kimi_k2_5_reasoning,Kimi-K2.5+R,217,22,41,117,20,17
+qwen35_397b_a17b,Qwen3.5-397B-A17B,309,91,109,43,60,6
+qwen35_397b_a17b_reasoning,Qwen3.5-397B-A17B+R,385,155,50,112,46,22
+gpt_5_4,GPT-5.4,41,10,14,14,2,1
+gpt_5_4_mini,GPT-5.4 Mini,149,19,24,99,0,7
+gpt_5_4_mini_reasoning_medium,GPT-5.4 Mini+R,27,2,23,1,1,0
+gemini_3_1_flash_lite_preview,Gemini-3.1-Flash-LitePr,182,162,9,5,4,2

@@ -1,0 +1,70 @@
+{
+  "created_at": "2026-04-27T05:59:34.912637+00:00",
+  "annotation_root": "<LOCAL_PROJECT_ROOT>/annotation",
+  "outputs_root": "<LOCAL_PROJECT_ROOT>/annotation/training_qwen3vl_recreation/outputs",
+  "output_root": "<LOCAL_PROJECT_ROOT>/annotation/results/filtered_benchmark/v1",
+  "rater": "local_vllm_qwen_qwen3_5_122b_a10b_gptq_int4",
+  "models": [
+    "qwen35_9b",
+    "kimi_k2_5",
+    "kimi_k2_5_reasoning",
+    "qwen35_397b_a17b",
+    "qwen35_397b_a17b_reasoning",
+    "gpt_5_4_mini",
+    "gpt_5_4_mini_reasoning_medium",
+    "gemini_3_1_flash_lite_preview"
+  ],
+  "splits": {
+    "filtered_test_mini": {
+      "source_split": "test-mini",
+      "num_filtered_samples": 539,
+      "dataset_counts": {
+        "ChartQA": 45,
+        "ChemVQA-2K": 63,
+        "DocVQA": 68,
+        "EEE-Bench": 22,
+        "GEOQA_8K_R1V": 21,
+        "Geoperception": 34,
+        "Graph-Algorithms": 39,
+        "GraphVQA-Swift": 42,
+        "OlympiadBench": 23,
+        "Physics": 31,
+        "dvqa": 39,
+        "figureqa": 39,
+        "geometry3k": 21,
+        "matplotlib": 13,
+        "spatialvlm_qa": 39
+      }
+    },
+    "filtered_test": {
+      "source_split": "test",
+      "num_filtered_samples": 2169,
+      "dataset_counts": {
+        "ChartQA": 195,
+        "ChemVQA-2K": 288,
+        "DocVQA": 292,
+        "EEE-Bench": 67,
+        "GEOQA_8K_R1V": 73,
+        "Geoperception": 137,
+        "Graph-Algorithms": 161,
+        "GraphVQA-Swift": 175,
+        "OlympiadBench": 81,
+        "Physics": 121,
+        "dvqa": 161,
+        "figureqa": 161,
+        "geometry3k": 65,
+        "matplotlib": 31,
+        "spatialvlm_qa": 161
+      }
+    }
+  },
+  "num_bootstrap": 10000,
+  "ci": 0.95,
+  "seed": 42,
+  "outputs": {
+    "model_score_cis": "<LOCAL_PROJECT_ROOT>/annotation/results/filtered_benchmark/v1/bootstrap_model_score_cis.csv",
+    "pairwise_diffs": "<LOCAL_PROJECT_ROOT>/annotation/results/filtered_benchmark/v1/bootstrap_pairwise_diffs.csv",
+    "rank_stability": "<LOCAL_PROJECT_ROOT>/annotation/results/filtered_benchmark/v1/bootstrap_rank_stability.csv",
+    "input_audit": "<LOCAL_PROJECT_ROOT>/annotation/results/filtered_benchmark/v1/bootstrap_input_audit.csv"
+  }
+}

@@ -1,0 +1,6 @@
+failure_type,failure_type_label,count,share_of_failures,share_of_failures_pct
+hallucinated_api_argument,Hallucinated API/argument,635,0.2908841044434265,29.1
+shape_3d_geometry,Shape/3D/geometry,495,0.22675217590471827,22.7
+other_runtime,Other runtime,492,0.22537792029317452,22.5
+syntax_truncation,Syntax/truncation,427,0.19560238204306002,19.6
+missing_dependency_file,Missing dependency/file,134,0.061383417315620706,6.1

@@ -1,0 +1,43 @@
+{
+  "models": [
+    "qwen35_9b",
+    "kimi_k2_5",
+    "kimi_k2_5_reasoning",
+    "qwen35_397b_a17b",
+    "qwen35_397b_a17b_reasoning",
+    "gpt_5_4",
+    "gpt_5_4_mini",
+    "gpt_5_4_mini_reasoning_medium",
+    "gemini_3_1_flash_lite_preview"
+  ],
+  "num_models": 9,
+  "filtered_test_mini_samples_per_model": 539,
+  "filtered_test_samples_per_model": 2169,
+  "filtered_test_model_sample_rows": 19521,
+  "filtered_test_failures": 2183,
+  "raw_failure_counts": {
+    "shape_3d_geometry": 495,
+    "hallucinated_api_argument": 635,
+    "syntax_truncation": 427,
+    "other_runtime": 491,
+    "missing_dependency_file": 134,
+    "timeout": 1
+  },
+  "plot_failure_counts": {
+    "shape_3d_geometry": 495,
+    "hallucinated_api_argument": 635,
+    "syntax_truncation": 427,
+    "other_runtime": 492,
+    "missing_dependency_file": 134
+  },
+  "outputs": {
+    "table_csv": "<LOCAL_PROJECT_ROOT>/annotation/results/filtered_benchmark/v1/render_error_analysis_table.csv",
+    "counts_csv": "<LOCAL_PROJECT_ROOT>/annotation/results/filtered_benchmark/v1/render_failure_type_counts_filtered_test.csv",
+    "by_model_csv": "<LOCAL_PROJECT_ROOT>/annotation/results/filtered_benchmark/v1/render_failure_type_by_model_filtered_test.csv",
+    "by_model_pivot_csv": "<LOCAL_PROJECT_ROOT>/annotation/results/filtered_benchmark/v1/render_failure_type_by_model_pivot_filtered_test.csv",
+    "raw_status_csv": "<LOCAL_PROJECT_ROOT>/annotation/results/filtered_benchmark/v1/render_failure_raw_status_counts_filtered_test.csv",
+    "bar_pdf": "<LOCAL_PROJECT_ROOT>/annotation/paper/figures/error_analysis/failure_types_filtered_test_bar.pdf",
+    "donut_pdf": "<LOCAL_PROJECT_ROOT>/annotation/paper/figures/error_analysis/failure_types_filtered_test_donut.pdf",
+    "stacked_pdf": "<LOCAL_PROJECT_ROOT>/annotation/paper/figures/error_analysis/failure_types_filtered_test_by_model.pdf"
+  }
+}

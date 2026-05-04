@@ -1,0 +1,16 @@
+split,dataset,count,domain
+test-mini,ChartQA,45,Charts&Plots
+test-mini,ChemVQA-2K,63,Science
+test-mini,DocVQA,68,Documents
+test-mini,EEE-Bench,22,Science
+test-mini,GEOQA_8K_R1V,21,Geometry
+test-mini,Geoperception,34,Geometry
+test-mini,Graph-Algorithms,39,Graphs
+test-mini,GraphVQA-Swift,42,Graphs
+test-mini,OlympiadBench,23,Science
+test-mini,Physics,31,Science
+test-mini,dvqa,39,Charts&Plots
+test-mini,figureqa,39,Charts&Plots
+test-mini,geometry3k,21,Geometry
+test-mini,matplotlib,13,Charts&Plots
+test-mini,spatialvlm_qa,39,Spatial

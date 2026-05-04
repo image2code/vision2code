@@ -1,0 +1,2 @@
+source_dataset,category,source_uri,source_card_license,license_url,split_policy,provenance_note,redistribution_status
+ChartQA,Charts&Plots,https://huggingface.co/datasets/HuggingFaceM4/ChartQA,gpl-3.0,https://www.gnu.org/licenses/gpl-3.0.en.html,Fixture only,Fixture provenance,Fixture only

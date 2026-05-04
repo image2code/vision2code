@@ -1,0 +1,18 @@
+{
+  "benchmark_version": "v1",
+  "expected_counts": {
+    "test-mini": 539,
+    "test": 2169,
+    "kaggle_manifest_rows": 2708
+  },
+  "kaggle_layout": [
+    "manifest.csv",
+    "manifest.jsonl",
+    "images/",
+    "source_licenses_provenance.csv",
+    "croissant.json"
+  ],
+  "split_aliases": {
+    "test-mini": "test_mini"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "generated_repo": "<CLEAN_REPO_ROOT>",
+  "source_root": "<SOURCE_WORKING_DIRECTORY>",
+  "copied_outputs": [
+    "configs/data/*filtered.json",
+    "results/paper_outputs/**/*",
+    "paper_assets/figures/*"
+  ],
+  "excluded": [
+    ".git",
+    "__pycache__",
+    "logs",
+    "wandb",
+    ".env",
+    "checkpoints",
+    "raw generations",
+    "render forests",
+    "node_modules",
+    "paper build artifacts"
+  ]
+}

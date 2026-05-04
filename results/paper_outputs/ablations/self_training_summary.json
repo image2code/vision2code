@@ -1,0 +1,47 @@
+{
+  "threshold": 4.0,
+  "sample_size": 1412,
+  "dev_ratio": 0.1,
+  "seed": 42,
+  "root": "<LOCAL_PROJECT_ROOT>/annotation/training_qwen3vl_recreation/outputs/sl_qwen35_9b/generations/train",
+  "out_dir": "<LOCAL_PROJECT_ROOT>/annotation/training_qwen3vl_recreation/self_improvement/datasets",
+  "dry_run": false,
+  "raw_stats": {
+    "sample_dirs_seen": 20000,
+    "missing_pair_rating": 5215,
+    "eligible_records": 12973,
+    "non_ok_or_missing_rating": 1812
+  },
+  "variants": {
+    "si4_uniform": {
+      "candidate_records": 12973,
+      "total_records": 1412,
+      "train_records": 1271,
+      "dev_records": 141
+    },
+    "si4_self_ok": {
+      "candidate_records": 1808,
+      "total_records": 1412,
+      "train_records": 1271,
+      "dev_records": 141
+    },
+    "si4_self_drop": {
+      "candidate_records": 1412,
+      "total_records": 1412,
+      "train_records": 1271,
+      "dev_records": 141
+    },
+    "si4_low_r1": {
+      "candidate_records": 9753,
+      "total_records": 1412,
+      "train_records": 1271,
+      "dev_records": 141
+    },
+    "si4_high_r1": {
+      "candidate_records": 3220,
+      "total_records": 1412,
+      "train_records": 1271,
+      "dev_records": 141
+    }
+  }
+}

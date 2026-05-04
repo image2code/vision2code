@@ -1,0 +1,7 @@
+metric_group,split,source_split,model_slug,num_filtered_samples,num_metric_rows,num_missing_rows,scored_rows,missing_render_rows,embed_error_rows,mean_cosine_image_only,mean_cosine_image_plus_text,mean_cosine_image_only_0_to_5,mean_cosine_image_plus_text_0_to_5,mean_cosine_image_only_0_to_5_all_rows,mean_cosine_image_plus_text_0_to_5_all_rows
+cosine_similarity,filtered_test,test,qwen35_9b,2169,2169,0,1585,584,0,0.8284801528,0.9007957452,4.5712003819,4.7519893631,3.3404115285,3.4725233474
+cosine_similarity,filtered_test,test,kimi_k2_5,2169,2169,0,1880,289,0,0.9205484209,0.9510756158,4.8013710522,4.8776890395,4.1616309720,4.2277802647
+cosine_similarity,filtered_test,test,qwen35_397b_a17b,2169,2169,0,1860,309,0,0.8787204560,0.9278959559,4.6968011400,4.8197398899,4.0276856249,4.1331102790
+cosine_similarity,filtered_test_mini,test-mini,qwen35_9b,539,539,0,413,126,0,0.8190470682,0.8928922227,4.5476176705,4.7322305568,3.4845382151,3.6259948422
+cosine_similarity,filtered_test_mini,test-mini,kimi_k2_5,539,539,0,502,37,0,0.9181309989,0.9503529961,4.7953274974,4.8758824903,4.4661491719,4.5411744158
+cosine_similarity,filtered_test_mini,test-mini,qwen35_397b_a17b,539,539,0,485,54,0,0.8777592341,0.9266795398,4.6943980853,4.8166988495,4.2240873310,4.3341353284

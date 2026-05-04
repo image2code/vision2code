@@ -1,0 +1,7 @@
+{
+  "score_min": 0.0,
+  "score_max": 5.0,
+  "rater_temperature": 0.0,
+  "rater_max_tokens": 2200,
+  "render_failure_score": 0.0
+}

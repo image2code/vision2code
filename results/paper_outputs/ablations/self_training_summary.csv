@@ -1,0 +1,6 @@
+candidate_records,dev_records,total_records,train_records,variant
+3220,141,1412,1271,si4_high_r1
+9753,141,1412,1271,si4_low_r1
+1412,141,1412,1271,si4_self_drop
+1808,141,1412,1271,si4_self_ok
+12973,141,1412,1271,si4_uniform

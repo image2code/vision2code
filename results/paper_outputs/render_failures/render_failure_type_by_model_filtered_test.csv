@@ -1,0 +1,46 @@
+model_slug,model,failure_type,failure_type_label,count,share_of_model_failures,share_of_model_failures_pct
+qwen35_9b,Qwen3.5-9B,hallucinated_api_argument,Hallucinated API/argument,89,0.1523972602739726,15.2
+qwen35_9b,Qwen3.5-9B,shape_3d_geometry,Shape/3D/geometry,178,0.3047945205479452,30.5
+qwen35_9b,Qwen3.5-9B,other_runtime,Other runtime,69,0.11815068493150685,11.8
+qwen35_9b,Qwen3.5-9B,syntax_truncation,Syntax/truncation,237,0.4058219178082192,40.6
+qwen35_9b,Qwen3.5-9B,missing_dependency_file,Missing dependency/file,11,0.018835616438356163,1.9
+kimi_k2_5,Kimi-K2.5,hallucinated_api_argument,Hallucinated API/argument,85,0.29411764705882354,29.4
+kimi_k2_5,Kimi-K2.5,shape_3d_geometry,Shape/3D/geometry,47,0.16262975778546712,16.3
+kimi_k2_5,Kimi-K2.5,other_runtime,Other runtime,32,0.11072664359861592,11.1
+kimi_k2_5,Kimi-K2.5,syntax_truncation,Syntax/truncation,57,0.1972318339100346,19.7
+kimi_k2_5,Kimi-K2.5,missing_dependency_file,Missing dependency/file,68,0.23529411764705882,23.5
+kimi_k2_5_reasoning,Kimi-K2.5+R,hallucinated_api_argument,Hallucinated API/argument,22,0.10138248847926268,10.1
+kimi_k2_5_reasoning,Kimi-K2.5+R,shape_3d_geometry,Shape/3D/geometry,41,0.1889400921658986,18.9
+kimi_k2_5_reasoning,Kimi-K2.5+R,other_runtime,Other runtime,117,0.5391705069124424,53.9
+kimi_k2_5_reasoning,Kimi-K2.5+R,syntax_truncation,Syntax/truncation,20,0.09216589861751152,9.2
+kimi_k2_5_reasoning,Kimi-K2.5+R,missing_dependency_file,Missing dependency/file,17,0.07834101382488479,7.8
+qwen35_397b_a17b,Qwen3.5-397B-A17B,hallucinated_api_argument,Hallucinated API/argument,91,0.29449838187702265,29.4
+qwen35_397b_a17b,Qwen3.5-397B-A17B,shape_3d_geometry,Shape/3D/geometry,109,0.35275080906148865,35.3
+qwen35_397b_a17b,Qwen3.5-397B-A17B,other_runtime,Other runtime,43,0.13915857605177995,13.9
+qwen35_397b_a17b,Qwen3.5-397B-A17B,syntax_truncation,Syntax/truncation,60,0.1941747572815534,19.4
+qwen35_397b_a17b,Qwen3.5-397B-A17B,missing_dependency_file,Missing dependency/file,6,0.019417475728155338,1.9
+qwen35_397b_a17b_reasoning,Qwen3.5-397B-A17B+R,hallucinated_api_argument,Hallucinated API/argument,155,0.4025974025974026,40.3
+qwen35_397b_a17b_reasoning,Qwen3.5-397B-A17B+R,shape_3d_geometry,Shape/3D/geometry,50,0.12987012987012986,13.0
+qwen35_397b_a17b_reasoning,Qwen3.5-397B-A17B+R,other_runtime,Other runtime,112,0.2909090909090909,29.1
+qwen35_397b_a17b_reasoning,Qwen3.5-397B-A17B+R,syntax_truncation,Syntax/truncation,46,0.11948051948051948,11.9
+qwen35_397b_a17b_reasoning,Qwen3.5-397B-A17B+R,missing_dependency_file,Missing dependency/file,22,0.05714285714285714,5.7
+gpt_5_4,GPT-5.4,hallucinated_api_argument,Hallucinated API/argument,10,0.24390243902439024,24.4
+gpt_5_4,GPT-5.4,shape_3d_geometry,Shape/3D/geometry,14,0.34146341463414637,34.1
+gpt_5_4,GPT-5.4,other_runtime,Other runtime,14,0.34146341463414637,34.1
+gpt_5_4,GPT-5.4,syntax_truncation,Syntax/truncation,2,0.04878048780487805,4.9
+gpt_5_4,GPT-5.4,missing_dependency_file,Missing dependency/file,1,0.024390243902439025,2.4
+gpt_5_4_mini,GPT-5.4 Mini,hallucinated_api_argument,Hallucinated API/argument,19,0.12751677852348994,12.8
+gpt_5_4_mini,GPT-5.4 Mini,shape_3d_geometry,Shape/3D/geometry,24,0.1610738255033557,16.1
+gpt_5_4_mini,GPT-5.4 Mini,other_runtime,Other runtime,99,0.6644295302013423,66.4
+gpt_5_4_mini,GPT-5.4 Mini,syntax_truncation,Syntax/truncation,0,0.0,0.0
+gpt_5_4_mini,GPT-5.4 Mini,missing_dependency_file,Missing dependency/file,7,0.04697986577181208,4.7
+gpt_5_4_mini_reasoning_medium,GPT-5.4 Mini+R,hallucinated_api_argument,Hallucinated API/argument,2,0.07407407407407407,7.4
+gpt_5_4_mini_reasoning_medium,GPT-5.4 Mini+R,shape_3d_geometry,Shape/3D/geometry,23,0.8518518518518519,85.2
+gpt_5_4_mini_reasoning_medium,GPT-5.4 Mini+R,other_runtime,Other runtime,1,0.037037037037037035,3.7
+gpt_5_4_mini_reasoning_medium,GPT-5.4 Mini+R,syntax_truncation,Syntax/truncation,1,0.037037037037037035,3.7
+gpt_5_4_mini_reasoning_medium,GPT-5.4 Mini+R,missing_dependency_file,Missing dependency/file,0,0.0,0.0
+gemini_3_1_flash_lite_preview,Gemini-3.1-Flash-LitePr,hallucinated_api_argument,Hallucinated API/argument,162,0.8901098901098901,89.0
+gemini_3_1_flash_lite_preview,Gemini-3.1-Flash-LitePr,shape_3d_geometry,Shape/3D/geometry,9,0.04945054945054945,4.9
+gemini_3_1_flash_lite_preview,Gemini-3.1-Flash-LitePr,other_runtime,Other runtime,5,0.027472527472527472,2.7
+gemini_3_1_flash_lite_preview,Gemini-3.1-Flash-LitePr,syntax_truncation,Syntax/truncation,4,0.02197802197802198,2.2
+gemini_3_1_flash_lite_preview,Gemini-3.1-Flash-LitePr,missing_dependency_file,Missing dependency/file,2,0.01098901098901099,1.1

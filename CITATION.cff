@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+title: Image2Code
+type: software
+message: "If you use this repository, cite the associated anonymous NeurIPS submission."
+authors:
+  - name: Anonymous Image2Code Authors
+version: 0.1.0
+license: Apache-2.0

@@ -1,0 +1,4 @@
+metric_group,split,source_split,model_slug,stage,num_filtered_samples,num_metric_rows,num_missing_rows,num_rated_final,num_missing_rating,benchmark_score_0_to_5,mean_final_rating_0_to_5,mean_raw_score_0_to_5,macro_mean_final_rating_0_to_5,macro_mean_raw_score_0_to_5,num_rated_raw,num_render_success,num_tts_rows,num_missing_tts_rows,tts_render_success_rate,mean_tts_similarity
+test_time_scaling,filtered_test_mini,test-mini,qwen35_9b,2,539,539,0,539,0,1.6303000000,1.6014842301,1.9150000000,1.6303000000,1.9032000000,539,407,413,126,0.7532467532,0.9275999034
+test_time_scaling,filtered_test_mini,test-mini,qwen35_9b,3,539,539,0,539,0,1.6092000000,1.5807050093,1.8932003711,1.6092000000,1.8857000000,539,403,406,133,0.7476808905,0.9361636843
+test_time_scaling,filtered_test_mini,test-mini,qwen35_9b,4,539,539,0,539,0,1.6293000000,1.5881261596,1.9156215213,1.6293000000,1.9176000000,539,401,403,136,0.7439703154,0.9385197491

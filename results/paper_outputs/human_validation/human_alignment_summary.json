@@ -1,0 +1,34 @@
+{
+  "human_csv": "<LOCAL_PROJECT_ROOT>/annotation/results/filtered_benchmark/v1/human_ratings.csv",
+  "filtered_samples_csv": "<LOCAL_PROJECT_ROOT>/annotation/results/filtered_benchmark/v1/filtered_samples_test_mini.csv",
+  "output_dir": "<LOCAL_PROJECT_ROOT>/annotation/results/filtered_benchmark/v1/human_alignment_filtered_test_mini",
+  "scope": "filtered_test_mini",
+  "human_only": false,
+  "common_rendered_only": false,
+  "exclude_human_zero": false,
+  "num_input_rows": 600,
+  "num_allowed_question_folders": 539,
+  "num_joined_rows_before_common_filter": 539,
+  "num_joined_rows_before_zero_filter": 539,
+  "num_joined_rows": 539,
+  "completion_mode_counts": {
+    "human": 414,
+    "imported_previous": 122,
+    "auto_no_render": 3
+  },
+  "model_counts": {
+    "qwen35_9b": 182,
+    "kimi_k2_5": 177,
+    "qwen35_397b_a17b": 180
+  },
+  "metrics": [
+    "ours_final",
+    "generic_final",
+    "cosine_image_only_0_to_5",
+    "cosine_image_only_0_to_5_all_rows",
+    "cosine_image_plus_text_0_to_5",
+    "cosine_image_plus_text_0_to_5_all_rows"
+  ],
+  "bootstrap_iters": 10000,
+  "seed": 42
+}

@@ -1,0 +1,10 @@
+{
+  "alpha": 4.0,
+  "filters": {
+    "all_valid": "all valid pairs",
+    "self_ok": "R1 >= alpha and R2 >= R1",
+    "self_drop": "R1 >= alpha and R2 < R1",
+    "low_r1": "R1 < alpha",
+    "high_r1": "R1 >= alpha"
+  }
+}

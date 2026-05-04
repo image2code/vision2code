@@ -1,0 +1,4 @@
+split,benchmark_split,question_folder,image_path,image_sha256,image_bytes,question,category,source_dataset,source_subset,source_id,source_record_id,source_original_split,source_jsonl_file,source_jsonl_line,image_available,asset_release_status,release_note
+test,test,fixture_001,images/test/fixture_001.png,,68,Fixture row for smoke tests.,Charts&Plots,ChartQA,fixture,fixture_001,fixture_001,test,,0,true,fixture,"small local fixture, not paper data"
+test,test,fixture_002,images/test/fixture_002.png,,68,Fixture row for smoke tests.,Charts&Plots,ChartQA,fixture,fixture_002,fixture_002,test,,0,true,fixture,"small local fixture, not paper data"
+test_mini,test-mini,fixture_003,images/test_mini/fixture_003.png,,68,Fixture row for smoke tests.,Charts&Plots,ChartQA,fixture,fixture_003,fixture_003,test,,0,true,fixture,"small local fixture, not paper data"

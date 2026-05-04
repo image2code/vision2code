@@ -1,0 +1,100 @@
+{
+  "created_at": "2026-04-27T20:50:47+00:00",
+  "annotation_root": "<LOCAL_PROJECT_ROOT>/annotation",
+  "outputs_root": "<LOCAL_PROJECT_ROOT>/annotation/training_qwen3vl_recreation/outputs",
+  "output_root": "<LOCAL_PROJECT_ROOT>/annotation/results/filtered_benchmark/v1",
+  "decisions_csv": "<LOCAL_PROJECT_ROOT>/annotation/filtering/docvqa_source_filter/decisions.csv",
+  "num_rejected_question_folders": 331,
+  "filtered_counts": {
+    "filtered_test_mini": {
+      "source_split": "test-mini",
+      "num_filtered_samples": 539,
+      "dataset_counts": {
+        "ChartQA": 45,
+        "ChemVQA-2K": 63,
+        "DocVQA": 68,
+        "EEE-Bench": 22,
+        "GEOQA_8K_R1V": 21,
+        "Geoperception": 34,
+        "Graph-Algorithms": 39,
+        "GraphVQA-Swift": 42,
+        "OlympiadBench": 23,
+        "Physics": 31,
+        "dvqa": 39,
+        "figureqa": 39,
+        "geometry3k": 21,
+        "matplotlib": 13,
+        "spatialvlm_qa": 39
+      }
+    },
+    "filtered_test": {
+      "source_split": "test",
+      "num_filtered_samples": 2169,
+      "dataset_counts": {
+        "ChartQA": 195,
+        "ChemVQA-2K": 288,
+        "DocVQA": 292,
+        "EEE-Bench": 67,
+        "GEOQA_8K_R1V": 73,
+        "Geoperception": 137,
+        "Graph-Algorithms": 161,
+        "GraphVQA-Swift": 175,
+        "OlympiadBench": 81,
+        "Physics": 121,
+        "dvqa": 161,
+        "figureqa": 161,
+        "geometry3k": 65,
+        "matplotlib": 31,
+        "spatialvlm_qa": 161
+      }
+    }
+  },
+  "model_groups": {
+    "main_models": [
+      "qwen35_9b",
+      "kimi_k2_5",
+      "kimi_k2_5_reasoning",
+      "qwen35_397b_a17b",
+      "qwen35_397b_a17b_reasoning",
+      "gpt_5_4",
+      "gpt_5_4_mini",
+      "gpt_5_4_mini_reasoning_medium",
+      "gemini_3_1_flash_lite_preview"
+    ],
+    "generic_models": [
+      "qwen35_9b",
+      "kimi_k2_5",
+      "qwen35_397b_a17b"
+    ],
+    "render_models": [
+      "qwen35_9b",
+      "kimi_k2_5",
+      "kimi_k2_5_reasoning",
+      "qwen35_397b_a17b",
+      "qwen35_397b_a17b_reasoning",
+      "gpt_5_4",
+      "gpt_5_4_mini",
+      "gpt_5_4_mini_reasoning_medium",
+      "gemini_3_1_flash_lite_preview",
+      "run_ssl_qwen9b"
+    ],
+    "cosine_models": [
+      "qwen35_9b",
+      "kimi_k2_5",
+      "qwen35_397b_a17b"
+    ],
+    "ssl_models": [
+      "run_ssl_qwen9b"
+    ],
+    "excluded_pending_models": []
+  },
+  "output_rows": {
+    "main_benchmark_ratings": 18,
+    "generic_rubric_ratings": 3,
+    "test_time_scaling_scores": 3,
+    "ssl_scores": 2,
+    "render_success_rates": 20,
+    "cosine_similarity_scores": 6,
+    "audit_missing_inputs": 4
+  }
+}
