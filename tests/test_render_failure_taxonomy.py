@@ -1,4 +1,4 @@
-from image2code.rendering.failure_taxonomy import classify_failure
+from vision2code.rendering.failure_taxonomy import classify_failure
 
 def test_failure_taxonomy_examples():
     assert classify_failure('timeout')=='timeout'

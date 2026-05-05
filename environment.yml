@@ -1,4 +1,4 @@
-name: image2code
+name: vision2code
 channels: [conda-forge]
 dependencies:
   - python=3.10

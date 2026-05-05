@@ -1,5 +1,5 @@
-from image2code.evaluation.dataset_rubrics import DATASET_RUBRICS, aggregate_rating
-from image2code.evaluation.generic_rubric import aggregate_generic_rating
+from vision2code.evaluation.dataset_rubrics import DATASET_RUBRICS, aggregate_rating
+from vision2code.evaluation.generic_rubric import aggregate_generic_rating
 
 def test_dataset_rubric_aggregation_smoke():
     rubric=DATASET_RUBRICS['ChartQA']

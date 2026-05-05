@@ -5,10 +5,10 @@ from pathlib import Path
 import sys
 sys.dont_write_bytecode=True
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
-from image2code.data.validate_manifest import validate_kaggle_dir
-from image2code.utils.anonymization import scan_repo
+from vision2code.data.validate_manifest import validate_kaggle_dir
+from vision2code.utils.anonymization import scan_repo
 REQ_FILES=['README.md','LICENSE','CITATION.cff','.gitignore','.env.example','pyproject.toml','environment.yml','configs/data/test-mini-filtered.json','configs/data/test-filtered.json','data/example_manifest_small.csv','results/paper_outputs/main_leaderboard/paper_table_summary.csv','docs/REPRODUCIBILITY.md','docs/DATASET.md','docs/HUMAN_VALIDATION.md','docs/COMPUTE.md','docs/LICENSES_AND_PROVENANCE.md']
-REQ_MODS=['image2code.data.load_kaggle_dataset','image2code.data.validate_manifest','image2code.rendering.render_python','image2code.rendering.failure_taxonomy','image2code.evaluation.dataset_rubrics','image2code.evaluation.generic_rubric','image2code.metrics.embedding_similarity','image2code.generation.prompts','image2code.ablations.self_training.filters','image2code.figures.make_leaderboard_tables']
+REQ_MODS=['vision2code.data.load_kaggle_dataset','vision2code.data.validate_manifest','vision2code.rendering.render_python','vision2code.rendering.failure_taxonomy','vision2code.evaluation.dataset_rubrics','vision2code.evaluation.generic_rubric','vision2code.metrics.embedding_similarity','vision2code.generation.prompts','vision2code.ablations.self_training.filters','vision2code.figures.make_leaderboard_tables']
 BAD_NAMES={'.env','.DS_Store'}; SKIP_PARTS={'.git','__pycache__','.pytest_cache'}; BAD_PARTS={'node_modules','wandb','logs','checkpoints'}; BAD_SUFFIX={'.safetensors','.ckpt','.pth','.pt','.arrow','.pyc'}
 def validate_tree(root):
     e=[]

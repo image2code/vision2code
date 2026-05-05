@@ -1,4 +1,4 @@
-from image2code.data.build_manifest import load_filtered_manifest, validate_filtered_manifests
+from vision2code.data.build_manifest import load_filtered_manifest, validate_filtered_manifests
 
 def test_filtered_manifest_counts_and_subset():
     assert len(load_filtered_manifest('test-mini'))==539

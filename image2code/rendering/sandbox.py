@@ -1,2 +1,0 @@
-from __future__ import annotations
-from image2code.rendering.render_python import render_matplotlib_code

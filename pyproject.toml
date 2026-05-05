@@ -2,9 +2,9 @@
 requires=["setuptools>=68","wheel"]
 build-backend="setuptools.build_meta"
 [project]
-name="image2code"
+name="vision2code"
 version="0.1.0"
-description="Anonymized Image2Code reproducibility code."
+description="Vision2Code benchmark code and utilities."
 readme="README.md"
 requires-python=">=3.10"
 license={file="LICENSE"}
@@ -15,4 +15,4 @@ train=["torch","torchvision","transformers","datasets","accelerate","trl","deeps
 tool_use=["playwright"]
 dev=["pytest>=7","ruff"]
 [tool.setuptools.packages.find]
-include=["image2code*"]
+include=["vision2code*"]

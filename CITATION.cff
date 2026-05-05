@@ -1,8 +1,8 @@
 cff-version: 1.2.0
-title: Image2Code
+title: Vision2Code
 type: software
-message: "If you use this software, cite Image2Code."
+message: "If you use this software, cite Vision2Code."
 authors:
-  - name: Image2Code Authors
+  - name: Vision2Code Authors
 version: 0.1.0
 license: Apache-2.0

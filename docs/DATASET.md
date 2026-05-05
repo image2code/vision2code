@@ -48,4 +48,4 @@ Validation checks reject absolute paths, missing images, private/local path stri
 
 `test`: ChartQA 195, ChemVQA-2K 288, DocVQA 292, EEE-Bench 67, GEOQA_8K_R1V 73, Geoperception 137, Graph-Algorithms 161, GraphVQA-Swift 175, OlympiadBench 81, Physics 121, dvqa 161, figureqa 161, geometry3k 65, matplotlib 31, spatialvlm_qa 161.
 
-Source split policy and provenance metadata are in `image2code.data.source_metadata` and mirrored by the Kaggle `source_licenses_provenance.csv`.
+Source split policy and provenance metadata are in `vision2code.data.source_metadata` and mirrored by the Kaggle `source_licenses_provenance.csv`.
