@@ -12,7 +12,6 @@ scripts/run_smoke_test.sh --data_dir "$VISION2CODE_DATA_DIR" --num_samples 3
 No Kaggle data available:
 
 ```bash
-python3 scripts/validate_repo.py
 scripts/run_smoke_test.sh --data_dir data/fixture_kaggle --num_samples 3
 ```
 

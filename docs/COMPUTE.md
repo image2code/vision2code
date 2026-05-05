@@ -22,8 +22,6 @@ Full proprietary-model reruns require user-provided keys in `.env`:
 - `GOOGLE_API_KEY`
 - `TOGETHER_API_KEY`
 
-The repository includes wrappers and prompt templates, not keys.
-
 ## Local Model And Training Reruns
 
 Local Hugging Face/Qwen reruns require `HF_TOKEN` if the selected model requires access, plus explicit model/checkpoint paths supplied by the user. Training and large ablations require GPUs sized for the selected checkpoint. No private checkpoint, cache, or cluster launch path is included.
