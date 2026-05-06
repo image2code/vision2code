@@ -1,0 +1,39 @@
+{
+  "summary": {
+    "benchmark_split": "test-mini",
+    "model_kind": "openai",
+    "model_path": "gpt-5.4-mini",
+    "output_dir": "results/outputs/gpt_5_4_mini_api_smoke/generations/benchmark/test_mini",
+    "num_manifest_rows": 539,
+    "num_samples": 1,
+    "num_render_success": 1,
+    "render_success_rate": 1.0,
+    "mean_similarity": 0.9260687821390812,
+    "max_new_tokens": 8192,
+    "reasoning_effort": "none",
+    "base_url": "https://api.openai.com/v1",
+    "num_skipped_existing_success": 0
+  },
+  "rows": [
+    {
+      "benchmark_version": "vision2code_kaggle_v1",
+      "benchmark_split": "test-mini",
+      "sample_id": "default__test.jsonl:509",
+      "dataset": "ChartQA",
+      "subset": "default",
+      "source_filtered_split": "test_mini",
+      "question_folder": "ChartQA_test_000509_2ac3907c97d2",
+      "question": "What age group thought that they should be subjected to it the most?",
+      "source_image_path": "<VISION2CODE_DATA_DIR>/images/test_mini/ChartQA_test_000509_2ac3907c97d2.png",
+      "metadata_path": "results/outputs/gpt_5_4_mini_api_smoke/generations/benchmark/test_mini/ChartQA_test_000509_2ac3907c97d2/metadata.json",
+      "copied_source_image_path": "results/outputs/gpt_5_4_mini_api_smoke/generations/benchmark/test_mini/ChartQA_test_000509_2ac3907c97d2/ChartQA_test_000509_2ac3907c97d2.png",
+      "generated_code_path": "results/outputs/gpt_5_4_mini_api_smoke/generations/benchmark/test_mini/ChartQA_test_000509_2ac3907c97d2/generated_code.py",
+      "rendered_image_path": "results/outputs/gpt_5_4_mini_api_smoke/generations/benchmark/test_mini/ChartQA_test_000509_2ac3907c97d2/rendered_image.png",
+      "sample_dir": "results/outputs/gpt_5_4_mini_api_smoke/generations/benchmark/test_mini/ChartQA_test_000509_2ac3907c97d2",
+      "render_success": true,
+      "status": "ok",
+      "similarity": 0.9260687821390812,
+      "generated_code_chars": 3430
+    }
+  ]
+}

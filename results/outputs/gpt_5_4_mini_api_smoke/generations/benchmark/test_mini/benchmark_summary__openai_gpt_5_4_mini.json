@@ -1,0 +1,53 @@
+{
+  "benchmark_split": "test-mini",
+  "model_kind": "openai",
+  "model_path": "gpt-5.4-mini",
+  "output_dir": "results/outputs/gpt_5_4_mini_api_smoke/generations/benchmark/test_mini",
+  "num_manifest_rows": 539,
+  "num_samples": 1,
+  "num_render_success": 1,
+  "render_success_rate": 1.0,
+  "mean_similarity": 0.9260687821390812,
+  "max_new_tokens": 8192,
+  "reasoning_effort": "none",
+  "base_url": "https://api.openai.com/v1",
+  "num_skipped_existing_success": 0,
+  "rubric_version": "recreation_rubric_v4_decimal_per_dataset",
+  "rater_provider": "openai",
+  "rater_model": "gpt-5.4-mini",
+  "rater_reasoning_enabled": false,
+  "rater_slug": "openai_gpt_5_4_mini",
+  "num_samples_evaluated": 1,
+  "num_rated": 1,
+  "benchmark_score_0_to_5": 3.7,
+  "mean_final_rating_0_to_5": 3.7,
+  "mean_raw_score_0_to_5": 3.695,
+  "macro_mean_final_rating_0_to_5": 3.7,
+  "macro_mean_raw_score_0_to_5": 3.695,
+  "final_rating_bins_0_to_5": {
+    "0-1": 0,
+    "1-2": 0,
+    "2-3": 0,
+    "3-4": 1,
+    "4-5": 0
+  },
+  "category_means_0_to_5": {
+    "ChartQA.cleanliness_completeness": 3.2,
+    "ChartQA.numeric_information_fidelity": 4.7,
+    "ChartQA.structure_layout_fidelity": 3.6,
+    "ChartQA.text_label_legibility_accuracy": 2.9
+  },
+  "by_dataset": {
+    "ChartQA": {
+      "num_samples": 1,
+      "mean_final_rating_0_to_5": 3.7,
+      "mean_raw_score_0_to_5": 3.695,
+      "category_means_0_to_5": {
+        "cleanliness_completeness": 3.2,
+        "numeric_information_fidelity": 4.7,
+        "structure_layout_fidelity": 3.6,
+        "text_label_legibility_accuracy": 2.9
+      }
+    }
+  }
+}

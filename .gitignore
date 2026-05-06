@@ -9,6 +9,9 @@ __pycache__/
 logs/
 wandb/
 outputs/
+!results/outputs/
+!results/outputs/gpt_5_4_mini_api_smoke/
+!results/outputs/gpt_5_4_mini_api_smoke/**
 checkpoints/
 *.safetensors
 *.pt

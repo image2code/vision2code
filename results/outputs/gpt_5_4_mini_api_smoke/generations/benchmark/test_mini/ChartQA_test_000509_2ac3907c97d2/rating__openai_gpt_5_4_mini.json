@@ -1,0 +1,76 @@
+{
+  "rubric_version": "recreation_rubric_v4_decimal_per_dataset",
+  "rubric_dataset": "ChartQA",
+  "status": "ok",
+  "execution_status": "ok",
+  "execution_detail": "",
+  "execution_error_present": false,
+  "reference_image_path": "results/outputs/gpt_5_4_mini_api_smoke/generations/benchmark/test_mini/ChartQA_test_000509_2ac3907c97d2/ChartQA_test_000509_2ac3907c97d2.png",
+  "candidate_image_path": "results/outputs/gpt_5_4_mini_api_smoke/generations/benchmark/test_mini/ChartQA_test_000509_2ac3907c97d2/rendered_image.png",
+  "candidate_inspection": {
+    "candidate_readable": true,
+    "is_blank_or_degenerate": false,
+    "checks_triggered": [],
+    "width": 420,
+    "height": 756,
+    "grayscale_mean": 235.2074,
+    "grayscale_variance": 2287.1462,
+    "near_white_ratio": 0.822628,
+    "near_black_ratio": 0.0
+  },
+  "category_scores": {
+    "numeric_information_fidelity": {
+      "label": "Numeric Information Fidelity",
+      "description": "Values, trends, ordering, and answer-relevant chart information are correct.",
+      "weight": 0.3,
+      "score_0_to_5": 4.7,
+      "weighted_score_0_to_5": 1.41,
+      "rationale": "Most bar values and ordering match the reference closely, including the key age-group values relevant to the question; only minor deviations are visible.",
+      "is_critical": true
+    },
+    "structure_layout_fidelity": {
+      "label": "Structure and Layout Fidelity",
+      "description": "Chart type, orientation, title placement, legend placement, and overall chart structure match the reference.",
+      "weight": 0.3,
+      "score_0_to_5": 3.6,
+      "weighted_score_0_to_5": 1.08,
+      "rationale": "The chart remains a horizontal bar chart with similar grouping, but the title and subtitle are crowded and shifted, and the legend/header text overlaps more than in the reference.",
+      "is_critical": true
+    },
+    "text_label_legibility_accuracy": {
+      "label": "Text, Label, and Legibility Accuracy",
+      "description": "Labels, numbers, headings, and text remain accurate, legible, and not crowded.",
+      "weight": 0.25,
+      "score_0_to_5": 2.9,
+      "weighted_score_0_to_5": 0.725,
+      "rationale": "Many labels and numbers are readable, but several headings are cramped or partially overlapping, reducing accuracy and clarity compared with the reference.",
+      "is_critical": false
+    },
+    "cleanliness_completeness": {
+      "label": "Cleanliness and Completeness",
+      "description": "The chart is unclipped, readable, and not missing major visible content.",
+      "weight": 0.15,
+      "score_0_to_5": 3.2,
+      "weighted_score_0_to_5": 0.48,
+      "rationale": "The full chart is present, but the lower footnote area is cramped and some text is clipped or crowded, making the recreation less clean than the original.",
+      "is_critical": false
+    }
+  },
+  "raw_score_0_to_5": 3.695,
+  "raw_visual_score_0_to_5": 3.695,
+  "provisional_rating_0_to_5": 3.7,
+  "applied_caps": [],
+  "final_rating_0_to_5": 3.7,
+  "strengths": [
+    "Correct overall chart type and horizontal layout.",
+    "Most category values and bar lengths are faithfully reproduced.",
+    "Key age-group data is preserved well enough to answer the question."
+  ],
+  "issues": [
+    "Title/subtitle placement is too tight and visually crowded.",
+    "Legend text overlaps and is harder to read than in the reference.",
+    "Some lower footnote text is cramped/clipped.",
+    "A few labels appear slightly mispositioned relative to the bars."
+  ],
+  "overall_summary": "This is a fairly strong recreation of the chart’s data and general structure. However, the title/legend area is crowded and the text layout is less clean and legible than the reference, which prevents a higher score."
+}

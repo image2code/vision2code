@@ -137,6 +137,12 @@ Each question folder contains the copied source image, `metadata.json`, `generat
 `rendered_image.png` when rendering succeeds, `execution_error.txt` when rendering fails,
 `result.json`, rating JSON, and the raw rater response.
 
+A one-sample API smoke-test output is included for inspection:
+
+```text
+results/outputs/gpt_5_4_mini_api_smoke/generations/benchmark/test_mini/
+```
+
 ## Full Test-Mini/Test Inference And Eval
 
 OpenAI API model:
@@ -228,6 +234,7 @@ vision2code/generation/   benchmark prompts and code normalization
 vision2code/metrics/      embedding similarity helpers and focus texts
 vision2code/tables/       CSV table and benchmark-stat reproduction
 results/paper_outputs/    saved outputs for table reproduction
+results/outputs/          included one-sample benchmark output
 paper_assets/tables/      reproduced CSV tables
 paper_assets/figures/     static paper figures
 ```
