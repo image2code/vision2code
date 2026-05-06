@@ -1,0 +1,12 @@
+model_name_or_path: Qwen/Qwen3.5-9B
+train_dataset: results/ablations/self_training_datasets/r1_ge_alpha_r2_ge_r1/hf_train
+dev_dataset: results/ablations/self_training_datasets/r1_ge_alpha_r2_ge_r1/hf_dev
+output_dir: results/ablations/self_training_checkpoints/r1_ge_alpha_r2_ge_r1
+deepspeed_config: configs/ablations/deepspeed_zero3.json
+learning_rate: 5.0e-6
+num_train_epochs: 6
+per_device_train_batch_size: 1
+gradient_accumulation_steps: 8
+max_seq_length: 2048
+bf16: true
+seed: 42

@@ -1,0 +1,2 @@
+Generate Python code to recreate this image. Return code only.
+

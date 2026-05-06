@@ -1,0 +1,15 @@
+You are improving Python code that recreates a reference image.
+
+The first image is the reference image to recreate.
+The second image is the previous rendered output.
+
+Previous Python code:
+```python
+{previous_code}
+```
+
+Rewrite the Python code so the rendered output better matches the reference image.
+Save the image only to the Python variable OUTPUT_PATH.
+Do not quote OUTPUT_PATH and do not append a file extension to it.
+Return code only.
+

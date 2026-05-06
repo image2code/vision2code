@@ -1,0 +1,12 @@
+{
+  "name": "tool-ablation-excalidraw-renderer",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "esbuild renderer_entrypoint.js --bundle --format=iife --outfile=renderer_bundle.js"
+  },
+  "dependencies": {
+    "@excalidraw/excalidraw": "^0.18.0",
+    "esbuild": "^0.25.0"
+  }
+}

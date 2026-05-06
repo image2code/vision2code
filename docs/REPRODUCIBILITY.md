@@ -54,9 +54,10 @@ Self-training filter definitions are implemented in `vision2code.ablations.self_
 Template entrypoints:
 
 ```bash
-python3 -m vision2code.ablations.self_training.build_datasets --input trajectories.jsonl --output data/self_training --alpha 0.7
-python3 -m vision2code.ablations.test_time_scaling.run_scaling --input generations.jsonl --output results/scaling
-python3 -m vision2code.ablations.tool_use.summarize --root results/paper_outputs/ablations/tool_use --output paper_assets/tables/tool_use_ablation_summary.csv
+python3 -m vision2code.ablations.self_training.prepare_data build --root results/outputs/self_training_candidates --out-dir results/ablations/self_training_datasets --threshold 4.0 --dry-run
+python3 -m vision2code.ablations.test_time_scaling.run_test_time_scaling --backend openai --model gpt-5.4-mini --data_dir "$VISION2CODE_DATA_DIR" --split test_mini --stage 1 --stage 2 --num_samples 1 --output_dir results/ablations/test_time_scaling/gpt_5_4_mini/test_mini --env-file .env
+python3 -m vision2code.ablations.cosine_baselines.run_embeddings --provider pixel --inference-csv results/outputs/gpt_5_4_mini_api_smoke/generations/benchmark/test_mini/benchmark_inference.csv --data_dir "$VISION2CODE_DATA_DIR" --output-dir results/ablations/cosine_smoke
+python3 -m vision2code.ablations.tool_use.run_tool_ablation --task latex_docvqa --manifest path/to/docvqa_latex_manifest.jsonl --output-dir results/ablations/tool_use/latex_docvqa --model gpt-5.4-mini --num-samples 1 --env-file .env
 ```
 
 Training commands intentionally use placeholders for checkpoint names, output directories, and compute resources.
