@@ -15,6 +15,6 @@ r=render_matplotlib_code(code,Path('/tmp/vision2code_smoke_render.png'))
 print(r)
 if not r['render_success']: raise SystemExit(1)
 PYSMOKE
-"${PYTHON}" -m vision2code.figures.make_leaderboard_tables --output-dir paper_assets/tables >/tmp/vision2code_smoke_tables.log
+"${PYTHON}" -m vision2code.tables.reproduce --group main --output-dir paper_assets/tables >/tmp/vision2code_smoke_tables.log
 printf 'Smoke test completed with data_dir=%s num_samples=%s
 ' "${DATA_DIR}" "${NUM_SAMPLES}"

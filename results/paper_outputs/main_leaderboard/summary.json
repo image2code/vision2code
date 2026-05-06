@@ -75,17 +75,14 @@
       "gpt_5_4",
       "gpt_5_4_mini",
       "gpt_5_4_mini_reasoning_medium",
-      "gemini_3_1_flash_lite_preview",
-      "run_ssl_qwen9b"
+      "gemini_3_1_flash_lite_preview"
     ],
     "cosine_models": [
       "qwen35_9b",
       "kimi_k2_5",
       "qwen35_397b_a17b"
     ],
-    "ssl_models": [
-      "run_ssl_qwen9b"
-    ],
+    "ssl_models": [],
     "excluded_pending_models": []
   },
   "output_rows": {

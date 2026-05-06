@@ -7,7 +7,7 @@ test-mini,GEOQA_8K_R1V,21,Geometry
 test-mini,Geoperception,34,Geometry
 test-mini,Graph-Algorithms,39,Graphs
 test-mini,GraphVQA-Swift,42,Graphs
-test-mini,OlympiadBench,23,Science
+test-mini,OlympiadBench,23,Geometry
 test-mini,Physics,31,Science
 test-mini,dvqa,39,Charts&Plots
 test-mini,figureqa,39,Charts&Plots

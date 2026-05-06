@@ -4,4 +4,5 @@ matplotlib>=3.6
 pandas>=1.5
 pytest>=7
 openai>=1.0
+together>=1.3
 # Optional full rerun/training: torch torchvision transformers datasets accelerate trl deepspeed

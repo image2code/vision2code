@@ -17,5 +17,3 @@ render_success,filtered_test,test,gpt_5_4_mini_reasoning_medium,benchmark_eval,2
 render_success,filtered_test_mini,test,gpt_5_4_mini_reasoning_medium,benchmark_eval_test_derived,539,539,0,533,0.9888682746
 render_success,filtered_test,test,gemini_3_1_flash_lite_preview,benchmark_eval,2169,2169,0,1987,0.9160903642
 render_success,filtered_test_mini,test,gemini_3_1_flash_lite_preview,benchmark_eval_test_derived,539,539,0,497,0.9220779221
-render_success,filtered_test,test,run_ssl_qwen9b,missing_benchmark_eval,2169,0,2169,0,0.0000000000
-render_success,filtered_test_mini,test,run_ssl_qwen9b,missing_benchmark_eval,539,0,539,0,0.0000000000

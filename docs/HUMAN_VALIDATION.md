@@ -18,4 +18,4 @@ To reproduce the human-correlation tables:
 scripts/reproduce_human_correlation.sh
 ```
 
-The script copies the compact saved summaries into `paper_assets/tables/`. Recomputing from raw annotation exports is not supported because raw exports can contain private annotator metadata.
+The script copies the compact saved summaries into `paper_assets/tables/`. Recomputing from raw human-label exports is not supported because raw exports can contain private annotator metadata.

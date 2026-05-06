@@ -1,6 +1,6 @@
-candidate_records,dev_records,total_records,train_records,variant
-3220,141,1412,1271,si4_high_r1
-9753,141,1412,1271,si4_low_r1
-1412,141,1412,1271,si4_self_drop
-1808,141,1412,1271,si4_self_ok
-12973,141,1412,1271,si4_uniform
+variant,filter_definition,threshold_alpha,candidate_records,total_records,train_records,dev_records,dev_ratio,seed,metric_group,split,source_split,model_slug,stage,num_filtered_samples,num_metric_rows,num_missing_rows,num_rated_final,num_missing_rating,benchmark_score_0_to_5,mean_final_rating_0_to_5,mean_raw_score_0_to_5,macro_mean_final_rating_0_to_5,macro_mean_raw_score_0_to_5,num_rated_raw,num_render_success,render_success_rate
+si4_uniform,all valid,4.0000000000,12973,1412,1271,141,0.1000000000,42,self_training,filtered_test_mini,test-mini,si4_uniform_qwen9b,,539,539,0,539,0,1.7233000000,1.7326530612,2.0988033395,1.7233000000,2.0337000000,539,449,0.8330241187
+si4_self_ok,R1 >= alpha and R2 >= R1,4.0000000000,1808,1412,1271,141,0.1000000000,42,self_training,filtered_test_mini,test-mini,si4_self_ok_qwen9b,,539,539,0,539,0,1.7722000000,1.7949907236,2.0564656772,1.7722000000,1.9895000000,539,404,0.7495361781
+si4_self_drop,R1 >= alpha and R2 < R1,4.0000000000,1412,1412,1271,141,0.1000000000,42,self_training,filtered_test_mini,test-mini,si4_self_drop_qwen9b,,539,539,0,539,0,1.8645000000,1.8730983302,2.1421057514,1.8645000000,2.1018000000,539,423,0.7847866419
+si4_low_r1,R1 < alpha,4.0000000000,9753,1412,1271,141,0.1000000000,42,self_training,filtered_test_mini,test-mini,si4_low_r1_qwen9b,,539,539,0,538,1,1.6962000000,1.6877323420,2.0503717472,1.6962000000,2.0237000000,538,444,0.8237476809
+si4_high_r1,R1 >= alpha,4.0000000000,3220,1412,1271,141,0.1000000000,42,self_training,filtered_test_mini,test-mini,si4_high_r1_qwen9b,,539,539,0,538,1,1.8567000000,1.8477695167,2.1074721190,1.8567000000,2.0886000000,538,397,0.7365491651

@@ -7,7 +7,7 @@ test,GEOQA_8K_R1V,73,Geometry
 test,Geoperception,137,Geometry
 test,Graph-Algorithms,161,Graphs
 test,GraphVQA-Swift,175,Graphs
-test,OlympiadBench,81,Science
+test,OlympiadBench,81,Geometry
 test,Physics,121,Science
 test,dvqa,161,Charts&Plots
 test,figureqa,161,Charts&Plots

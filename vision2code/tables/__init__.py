@@ -1,0 +1,1 @@
+"""Paper table reproduction helpers."""

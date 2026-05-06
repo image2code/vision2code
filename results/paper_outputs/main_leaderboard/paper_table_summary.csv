@@ -23,8 +23,9 @@ generic_rubric_rating,filtered_test_mini,qwen35_397b_a17b,,3.1088000000,539,539,
 test_time_scaling_rating,filtered_test_mini,qwen35_9b,2,1.6303000000,539,539,0
 test_time_scaling_rating,filtered_test_mini,qwen35_9b,3,1.6092000000,539,539,0
 test_time_scaling_rating,filtered_test_mini,qwen35_9b,4,1.6293000000,539,539,0
-ssl_rating,filtered_test,run_ssl_qwen9b,,,2169,0,2169
-ssl_rating,filtered_test_mini,run_ssl_qwen9b,,,539,0,539
+test_time_scaling_rating,filtered_test_mini,gpt_5_4_mini,2,3.8382000000,539,539,0
+test_time_scaling_rating,filtered_test_mini,gpt_5_4_mini,3,3.8307000000,539,539,0
+test_time_scaling_rating,filtered_test_mini,gpt_5_4_mini,4,3.8118000000,539,539,0
 render_success_rate,filtered_test,qwen35_9b,,0.7307514984,2169,2169,0
 render_success_rate,filtered_test_mini,qwen35_9b,,0.7513914657,539,539,0
 render_success_rate,filtered_test,kimi_k2_5,,0.8667588751,2169,2169,0
@@ -43,8 +44,6 @@ render_success_rate,filtered_test,gpt_5_4_mini_reasoning_medium,,0.9875518672,21
 render_success_rate,filtered_test_mini,gpt_5_4_mini_reasoning_medium,,0.9888682746,539,539,0
 render_success_rate,filtered_test,gemini_3_1_flash_lite_preview,,0.9160903642,2169,2169,0
 render_success_rate,filtered_test_mini,gemini_3_1_flash_lite_preview,,0.9220779221,539,539,0
-render_success_rate,filtered_test,run_ssl_qwen9b,,0.0000000000,2169,0,2169
-render_success_rate,filtered_test_mini,run_ssl_qwen9b,,0.0000000000,539,0,539
 cosine_image_only_0_to_5_all_rows,filtered_test,qwen35_9b,,3.3404115285,2169,2169,0
 cosine_image_plus_text_0_to_5_all_rows,filtered_test,qwen35_9b,,3.4725233474,2169,2169,0
 cosine_image_only_0_to_5_all_rows,filtered_test,kimi_k2_5,,4.1616309720,2169,2169,0
