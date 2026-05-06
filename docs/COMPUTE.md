@@ -9,7 +9,7 @@ scripts/reproduce_main_tables.sh
 scripts/reproduce_error_analysis.sh
 scripts/reproduce_human_correlation.sh
 scripts/reproduce_ablations.sh
-scripts/reproduce_figures.sh
+scripts/reproduce_benchmark_stats.sh
 ```
 
 The smoke test needs Python, Pillow, NumPy, pandas, and Matplotlib. Rendering runs with `MPLBACKEND=Agg` in a temporary directory.

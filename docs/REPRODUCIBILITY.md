@@ -15,17 +15,18 @@ No Kaggle data available:
 scripts/run_smoke_test.sh --data_dir data/fixture_kaggle --num_samples 3
 ```
 
-## Level 2: Tables And Figures From Saved Outputs
+## Level 2: Tables And Benchmark Statistics From Saved Outputs
 
 ```bash
 scripts/reproduce_main_tables.sh
 scripts/reproduce_error_analysis.sh
 scripts/reproduce_human_correlation.sh
 scripts/reproduce_ablations.sh
-scripts/reproduce_figures.sh
+scripts/reproduce_benchmark_stats.sh
 ```
 
-These commands read `results/paper_outputs/` and write derived files under `paper_assets/tables/` and `paper_assets/figures/`. They do not call model APIs.
+These commands read saved CSV/JSON files and write derived CSV files under `paper_assets/tables/`. They do not call model APIs.
+Static figure files are kept under `paper_assets/figures/`.
 
 ## Level 3: Full Evaluation Rerun
 
