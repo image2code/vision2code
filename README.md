@@ -12,7 +12,7 @@ pip install -e ".[dev,eval]"
 cp .env.example .env
 ```
 
-Open `.env` and add the keys you need:
+Open `.env` and add the keys as required:
 
 ```dotenv
 OPENAI_API_KEY=your_openai_key
@@ -22,8 +22,6 @@ KAGGLE_USERNAME=your_kaggle_username
 KAGGLE_KEY=your_kaggle_key
 VISION2CODE_DATA_DIR=/path/to/vision2code_kaggle_dataset
 ```
-
-Do not commit `.env`.
 
 Local model inference needs the local/training extras:
 
@@ -51,7 +49,7 @@ croissant.json
 
 ## One-Sample OpenAI Smoke Test
 
-This writes the same directory layout used by full benchmark runs.
+Test the inference script with one sample and the OpenAI API for gpt-5.4-mini:
 
 ```bash
 python3 -m vision2code.benchmark.run_benchmark \

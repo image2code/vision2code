@@ -63,9 +63,12 @@ def _call_rater_completion(
             {"role": "user", "content": user_content},
         ],
         "temperature": temperature,
-        "max_tokens": max_tokens,
         "timeout": timeout_sec,
     }
+    if provider == "openai":
+        kwargs["max_completion_tokens"] = max_tokens
+    else:
+        kwargs["max_tokens"] = max_tokens
     if provider == "local_vllm":
         kwargs["extra_body"] = {"chat_template_kwargs": {"enable_thinking": reasoning_enabled}}
     elif provider == "together":
