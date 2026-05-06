@@ -12,7 +12,7 @@ pip install -e ".[dev,eval]"
 cp .env.example .env
 ```
 
-Open `.env` and add the keys as required:
+Open `.env` and add the keys you need:
 
 ```dotenv
 OPENAI_API_KEY=your_openai_key
@@ -21,7 +21,12 @@ HF_TOKEN=your_huggingface_token
 KAGGLE_USERNAME=your_kaggle_username
 KAGGLE_KEY=your_kaggle_key
 VISION2CODE_DATA_DIR=/path/to/vision2code_kaggle_dataset
+RATER_BASE_URL=http://127.0.0.1:8000/v1
+RATER_MODEL=Qwen/Qwen3.5-122B-A10B-GPTQ-Int4
+RATER_API_KEY=EMPTY
 ```
+
+Do not commit `.env`.
 
 Local model inference needs the local/training extras:
 
@@ -47,9 +52,62 @@ source_licenses_provenance.csv
 croissant.json
 ```
 
+## Local Rater Setup
+
+The default evaluator uses a local OpenAI-compatible vLLM server:
+
+```text
+Qwen/Qwen3.5-122B-A10B-GPTQ-Int4
+http://127.0.0.1:8000/v1
+```
+
+Install vLLM in the environment where you will run the rater. This is separate from the base install because vLLM is GPU- and platform-specific.
+
+```bash
+pip install vllm huggingface_hub
+bash scripts/download_rater_model.sh
+```
+
+For a custom model cache, export the same cache setting before both download and server startup:
+
+```bash
+export HF_HOME=/path/to/hf_cache
+bash scripts/download_rater_model.sh
+```
+
+Keep `HF_HOME` set in the terminal where you start vLLM.
+
+Start the rater in one terminal:
+
+```bash
+bash scripts/start_local_rater.sh
+```
+
+Check it from another terminal:
+
+```bash
+python3 scripts/check_local_rater.py \
+  --base-url http://127.0.0.1:8000/v1 \
+  --model Qwen/Qwen3.5-122B-A10B-GPTQ-Int4
+```
+
+If the model is already downloaded somewhere else, point vLLM at that path while keeping the served model name fixed:
+
+```bash
+RATER_MODEL_PATH=/path/to/model_or_snapshot \
+bash scripts/start_local_rater.sh
+```
+
 ## One-Sample OpenAI Smoke Test
 
-Test the inference script with one sample and the OpenAI API for gpt-5.4-mini:
+This tests OpenAI generation plus the default local rater. Add `OPENAI_API_KEY` to `.env` first, and keep the local rater server running in a separate terminal.
+
+```bash
+bash scripts/run_openai_smoke_default_rater.sh \
+  --data_dir "$VISION2CODE_DATA_DIR"
+```
+
+Equivalent explicit command:
 
 ```bash
 python3 -m vision2code.benchmark.run_benchmark \
@@ -60,10 +118,14 @@ python3 -m vision2code.benchmark.run_benchmark \
   --split test_mini \
   --num_samples 1 \
   --output_root results/outputs \
-  --rater-provider openai \
-  --rater-model gpt-5.4-mini \
+  --rater-provider local_vllm \
+  --rater-model Qwen/Qwen3.5-122B-A10B-GPTQ-Int4 \
+  --rater-base-url http://127.0.0.1:8000/v1 \
+  --rater-api-key EMPTY \
   --env-file .env
 ```
+
+For a quick API-only check without the local rater, use `--rater-provider openai --rater-model gpt-5.4-mini`.
 
 Outputs are written under:
 
@@ -90,6 +152,7 @@ python3 -m vision2code.benchmark.run_benchmark \
   --output_root results/outputs \
   --rater-provider local_vllm \
   --rater-model Qwen/Qwen3.5-122B-A10B-GPTQ-Int4 \
+  --rater-base-url http://127.0.0.1:8000/v1 \
   --rater-api-key EMPTY \
   --env-file .env
 ```
@@ -107,6 +170,7 @@ python3 -m vision2code.benchmark.run_benchmark \
   --output_root results/outputs \
   --rater-provider local_vllm \
   --rater-model Qwen/Qwen3.5-122B-A10B-GPTQ-Int4 \
+  --rater-base-url http://127.0.0.1:8000/v1 \
   --rater-api-key EMPTY \
   --env-file .env
 ```

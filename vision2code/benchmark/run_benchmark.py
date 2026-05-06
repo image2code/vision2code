@@ -93,6 +93,8 @@ EVAL_FIELDNAMES = [
 ]
 
 RETRYABLE_STATUS_CODES = {408, 409, 429, 500, 502, 503, 504, 529}
+DEFAULT_LOCAL_RATER_BASE_URL = "http://127.0.0.1:8000/v1"
+DEFAULT_LOCAL_RATER_MODEL = "Qwen/Qwen3.5-122B-A10B-GPTQ-Int4"
 
 
 def sanitize_slug(text: str) -> str:
@@ -309,8 +311,52 @@ def build_rater_client(args: argparse.Namespace) -> Any:
 
     from openai import OpenAI
 
-    base_url = args.rater_base_url or ("http://127.0.0.1:8000/v1" if args.rater_provider == "local_vllm" else "https://api.openai.com/v1")
+    base_url = resolved_rater_base_url(args)
     return OpenAI(api_key=args.rater_api_key, base_url=base_url, timeout=args.rater_api_timeout_sec, max_retries=0)
+
+
+def resolved_rater_base_url(args: argparse.Namespace) -> str:
+    if args.rater_base_url:
+        return str(args.rater_base_url).rstrip("/")
+    if args.rater_provider == "local_vllm":
+        return DEFAULT_LOCAL_RATER_BASE_URL
+    if args.rater_provider == "together":
+        return "https://api.together.xyz/v1"
+    return "https://api.openai.com/v1"
+
+
+def model_ids_from_response(response: Any) -> list[str]:
+    data = getattr(response, "data", None)
+    if data is None and isinstance(response, Mapping):
+        data = response.get("data")
+    ids: list[str] = []
+    for item in data or []:
+        model_id = getattr(item, "id", None)
+        if model_id is None and isinstance(item, Mapping):
+            model_id = item.get("id")
+        if model_id:
+            ids.append(str(model_id))
+    return sorted(set(ids))
+
+
+def validate_local_vllm_rater(client: Any, *, model: str, base_url: str) -> list[str]:
+    try:
+        response = client.models.list()
+    except Exception as exc:
+        raise RuntimeError(
+            f"Local rater server is not reachable at {base_url}. "
+            "Start it with `bash scripts/start_local_rater.sh` or pass --rater-base-url."
+        ) from exc
+    available_models = model_ids_from_response(response)
+    if model not in available_models:
+        available = ", ".join(available_models) if available_models else "none"
+        raise RuntimeError(
+            f"Local rater server at {base_url} is running, but it is not serving `{model}`. "
+            f"Available models: {available}. Start the server with "
+            "`bash scripts/start_local_rater.sh` or pass --rater-model to match the served model name."
+        )
+    print(f"[RATER] local_vllm reachable at {base_url}; model={model}", flush=True)
+    return available_models
 
 
 def call_rater(
@@ -623,7 +669,7 @@ def parse_args() -> argparse.Namespace:
     ap.add_argument("--retry-jitter-sec", type=float, default=5.0)
     ap.add_argument("--rubric", choices=["dataset", "generic"], default="dataset")
     ap.add_argument("--rater-provider", choices=["openai", "local_vllm", "together"], default="local_vllm")
-    ap.add_argument("--rater-model", default="Qwen/Qwen3.5-122B-A10B-GPTQ-Int4")
+    ap.add_argument("--rater-model", default=DEFAULT_LOCAL_RATER_MODEL)
     ap.add_argument("--rater-base-url", default="")
     ap.add_argument("--rater-api-key-env", default="")
     ap.add_argument("--rater-api-key", default="")
@@ -641,6 +687,11 @@ def parse_args() -> argparse.Namespace:
 def main() -> None:
     args = parse_args()
     load_env_file(args.env_file, override=True)
+    if args.rater_provider == "local_vllm":
+        args.rater_base_url = args.rater_base_url or os.getenv("RATER_BASE_URL", "")
+        if args.rater_model == DEFAULT_LOCAL_RATER_MODEL and os.getenv("RATER_MODEL"):
+            args.rater_model = str(os.getenv("RATER_MODEL"))
+        args.rater_api_key = args.rater_api_key or os.getenv("RATER_API_KEY", "")
     data_dir = locate_data_dir(args.data_dir)
     split_value = split_alias(args.split)
     benchmark_split = internal_split(split_value)
@@ -677,8 +728,13 @@ def main() -> None:
 
     if args.provider == "openai" and not os.getenv("OPENAI_API_KEY"):
         raise RuntimeError(f"Set OPENAI_API_KEY in the environment or in {args.env_file}.")
-    rater_api_key_env = args.rater_api_key_env or ("TOGETHER_API_KEY" if args.rater_provider == "together" else "OPENAI_API_KEY")
-    args.rater_api_key = args.rater_api_key or os.getenv(rater_api_key_env) or "EMPTY"
+    default_rater_api_key_env = ""
+    if args.rater_provider == "together":
+        default_rater_api_key_env = "TOGETHER_API_KEY"
+    elif args.rater_provider == "openai":
+        default_rater_api_key_env = "OPENAI_API_KEY"
+    rater_api_key_env = args.rater_api_key_env or default_rater_api_key_env
+    args.rater_api_key = args.rater_api_key or (os.getenv(rater_api_key_env) if rater_api_key_env else "") or "EMPTY"
     if args.rater_provider == "openai" and args.rater_api_key == "EMPTY":
         raise RuntimeError(f"Set OPENAI_API_KEY in the environment or in {args.env_file}.")
     if args.rater_provider == "together" and args.rater_api_key == "EMPTY":
@@ -697,6 +753,8 @@ def main() -> None:
         local_model, local_processor = load_local_model(args)
 
     rater_client = None if args.skip_rating else build_rater_client(args)
+    if rater_client is not None and args.rater_provider == "local_vllm":
+        validate_local_vllm_rater(rater_client, model=args.rater_model, base_url=resolved_rater_base_url(args))
     rating_slug = rater_slug(args.rater_provider, args.rater_model, args.rater_reasoning)
     rubric_version = GENERIC_RUBRIC_VERSION if args.rubric == "generic" else RUBRIC_VERSION
     used_sample_names: set[str] = set()
