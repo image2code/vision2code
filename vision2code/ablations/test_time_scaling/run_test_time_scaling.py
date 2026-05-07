@@ -212,6 +212,35 @@ def row_base(row: Mapping[str, Any], stage: int, sample_dir: Path, source_path: 
     }
 
 
+def stage_artifact_paths(sample_dir: Path, stage: int) -> dict[str, Path]:
+    if stage == 1:
+        return {
+            "code": sample_dir / "generated_code.py",
+            "rendered": sample_dir / "rendered_image.png",
+            "result": sample_dir / "result.json",
+            "error": sample_dir / "execution_error.txt",
+        }
+    prefix = f"stage{stage}"
+    return {
+        "code": sample_dir / f"{prefix}_generated_code.py",
+        "rendered": sample_dir / f"{prefix}_rendered_image.png",
+        "result": sample_dir / f"{prefix}_result.json",
+        "error": sample_dir / f"{prefix}_execution_error.txt",
+    }
+
+
+def previous_stage_artifact_paths(sample_dir: Path, stage: int) -> dict[str, Path]:
+    paths = stage_artifact_paths(sample_dir, stage - 1)
+    legacy = {
+        "code": sample_dir / f"tts_stage{stage - 1}_code.py",
+        "rendered": sample_dir / f"tts_stage{stage - 1}_rendered.png",
+    }
+    for key, legacy_path in legacy.items():
+        if not paths[key].exists() and legacy_path.exists():
+            paths[key] = legacy_path
+    return paths
+
+
 def main() -> None:
     args = parse_args()
     load_env_file(args.env_file, override=True)
@@ -248,23 +277,30 @@ def main() -> None:
             source_path = source_image_path(data_dir, row)
             with Image.open(source_path) as image:
                 target_size = image.convert("RGB").size
-            code_path = sample_dir / f"tts_stage{stage}_code.py"
-            rendered_path = sample_dir / f"tts_stage{stage}_rendered.png"
-            result_path = sample_dir / f"tts_stage{stage}_result.json"
-            error_path = sample_dir / f"tts_stage{stage}_execution_error.txt"
-            previous_code_path = sample_dir / f"tts_stage{stage - 1}_code.py"
-            previous_render_path = sample_dir / f"tts_stage{stage - 1}_rendered.png"
+            current_paths = stage_artifact_paths(sample_dir, stage)
+            code_path = current_paths["code"]
+            rendered_path = current_paths["rendered"]
+            result_path = current_paths["result"]
+            error_path = current_paths["error"]
+            previous_paths = previous_stage_artifact_paths(sample_dir, stage) if stage > 1 else {}
+            previous_code_path = previous_paths.get("code")
+            previous_render_path = previous_paths.get("rendered")
             if existing_ok(result_path, rendered_path, args.force):
                 payload = json.loads(result_path.read_text(encoding="utf-8"))
                 out_rows.append(payload)
                 continue
-            if stage > 1 and (not previous_code_path.exists() or not previous_render_path.exists()):
+            if stage > 1 and (
+                previous_code_path is None
+                or previous_render_path is None
+                or not previous_code_path.exists()
+                or not previous_render_path.exists()
+            ):
                 payload = row_base(row, stage, sample_dir, source_path)
                 payload.update(
                     {
                         "previous_stage": stage - 1,
-                        "previous_generated_code_path": str(previous_code_path),
-                        "previous_rendered_image_path": str(previous_render_path),
+                        "previous_generated_code_path": str(previous_code_path or ""),
+                        "previous_rendered_image_path": str(previous_render_path or ""),
                         "generated_code_path": "",
                         "rendered_image_path": "",
                         "execution_error_path": "",
@@ -279,7 +315,7 @@ def main() -> None:
                 write_json(result_path, payload)
                 out_rows.append(payload)
                 continue
-            previous_code = previous_code_path.read_text(encoding="utf-8") if stage > 1 else None
+            previous_code = previous_code_path.read_text(encoding="utf-8") if stage > 1 and previous_code_path else None
             if args.backend == "openai":
                 raw_code = generate_openai(
                     client,
@@ -293,7 +329,7 @@ def main() -> None:
                 with Image.open(source_path) as source_image_handle:
                     source_image_rgb = source_image_handle.convert("RGB")
                 previous_image_rgb = None
-                if stage > 1:
+                if stage > 1 and previous_render_path is not None:
                     with Image.open(previous_render_path) as previous_image_handle:
                         previous_image_rgb = previous_image_handle.convert("RGB")
                 raw_code = generate_local_tts(
@@ -317,8 +353,8 @@ def main() -> None:
             payload.update(
                 {
                     "previous_stage": stage - 1 if stage > 1 else "",
-                    "previous_generated_code_path": str(previous_code_path) if stage > 1 else "",
-                    "previous_rendered_image_path": str(previous_render_path) if stage > 1 else "",
+                    "previous_generated_code_path": str(previous_code_path or "") if stage > 1 else "",
+                    "previous_rendered_image_path": str(previous_render_path or "") if stage > 1 else "",
                     "generated_code_path": str(code_path),
                     "rendered_image_path": str(rendered_path) if render_result["render_success"] else "",
                     "execution_error_path": str(error_path) if not render_result["render_success"] else "",

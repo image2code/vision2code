@@ -12,7 +12,7 @@ pip install -e ".[dev,eval]"
 cp .env.example .env
 ```
 
-Open `.env` and add the keys you need:
+Open `.env` and add the keys:
 
 ```dotenv
 OPENAI_API_KEY=your_openai_key
@@ -25,8 +25,6 @@ RATER_BASE_URL=http://127.0.0.1:8000/v1
 RATER_MODEL=Qwen/Qwen3.5-122B-A10B-GPTQ-Int4
 RATER_API_KEY=EMPTY
 ```
-
-Do not commit `.env`.
 
 Local model inference needs the local/training extras:
 
