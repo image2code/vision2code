@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Vision2Code is a multi-domain benchmark for evaluating image-to-code generation.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vision2Code</title>
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script defer src="./static/js/index.js"></script>
+</head>
+<body>
+
+<main id="top">
+  <section class="hero publication-header">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">
+              Vision2Code: A Multi-Domain Benchmark for Evaluating Image-to-Code Generation
+            </h1>
+
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="#top" class="button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fas fa-file-alt"></i></span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="#top" class="button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fas fa-code"></i></span>
+                  <span>Code</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="#viewer" class="button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fas fa-database"></i></span>
+                  <span>Dataset</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="#leaderboard" class="button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fas fa-trophy"></i></span>
+                  <span>Leaderboard</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <img class="teaser-image" src="./static/images/figures/benchmark_examples.png" alt="Vision2Code benchmark examples spanning charts and plots, geometry, graphs, scientific imagery, documents, and 3D spatial scenes.">
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="abstract">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Image-to-code generation tests whether a vision-language model (VLM) can recover the structure of an image
+              enough to express it as executable code. Existing benchmarks either focus on narrow visual domains, depend on
+              paired executable reference code, or rely on generic rubrics that miss domain-specific reconstruction errors. We
+              introduce <b>Vision2Code</b>, a reference-code-free benchmark and evaluation framework for multi-domain image-to-
+              code generation. Vision2Code contains 2,169 test examples from 15 source datasets that span charts and plots,
+              geometry, graphs, scientific imagery, documents, and 3D spatial scenes. Models generate executable programs,
+              which we render and score against the source image using a VLM rater with dataset-specific rubrics and deterministic
+              guardrails for severe semantic failures. We report render-success diagnostics that separate code execution failures
+              from reconstruction quality. Human validation shows that this evaluation protocol aligns better with human
+              judgments than either a generic visual rubric or embedding-similarity baselines. Across nine open-weight and
+              proprietary models, we find that image-to-code performance is domain-dependent: leading models perform well
+              on regular chart- and graph-like visuals but remain weak on spatial scenes, chemistry, documents, and circuit-style
+              diagrams. Finally, we show that evaluator-filtered model outputs can serve as training data to improve image-to-
+              code capability, with Qwen3.5-9B improving from 1.60 to 1.86 on the benchmark without paired source programs.
+              Vision2Code provides a reproducible testbed for measuring, diagnosing, and improving image-to-code generation.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="benchmark">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Benchmark and Evaluation</h2>
+      <div class="method-copy">
+        <h3 class="title is-5">What Vision2Code Measures</h3>
+        <p>
+          Vision2Code measures image-to-code generation for visual reconstruction:
+          given a source image, a model must produce a self-contained program whose
+          execution renders an image that matches the source in the information that
+          matters most for that visual domain. Reproduction is not defined as exact pixel
+          copying. A good reconstruction preserves semantic and structural content such
+          as plotted values, labels, topology, notation, document layout, or spatial
+          relations while remaining useful as editable code.
+        </p>
+      </div>
+
+      <div class="method-copy method-wide dataset-section">
+        <h3 class="title is-5">Dataset</h3>
+        <p>
+          The benchmark contains 2,169 manually filtered test examples and a
+          539-example test-mini subset from 15 public visual datasets. The sources span
+          six domains: charts and plots, geometry, graphs, scientific imagery, documents,
+          and 3D spatial scenes. This coverage is designed to isolate distinct
+          reconstruction challenges, including axis scales, label-to-object binding,
+          topology and directionality, domain-specific notation, dense text layout, and
+          spatial relations.
+        </p>
+        <figure class="image paper-figure benchmark-stats-figure">
+          <img src="./static/images/figures/benchmark_statistics_nordic.png" alt="Benchmark statistics by domain and dataset.">
+          <figcaption>
+            Vision2Code statistics. Left: per-dataset counts for test-mini and test.
+            Right: domain-level composition.
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="method-copy method-wide">
+        <h3 class="title is-5">Evaluation Pipeline</h3>
+        <p>
+          Models are prompted to write Python code using Matplotlib and NumPy, which is then executed in a fixed rendering environment. Programs that fail, do not produce a valid rendered image receive a final score of 0.0. Successful renders are compared against the source image by a VLM rater
+          using dataset-specific rubrics with four weighted categories and deterministic
+          caps for severe semantic failures. Our dataset-specific rubric correlates with human ratings better than a generic rubric or embedding-similarity baselines.
+        </p>
+      </div>
+
+      <figure class="image paper-figure pipeline-figure">
+        <img src="./static/images/figures/pipeline.png" alt="Vision2Code rater pipeline.">
+        <figcaption>
+          Generated code is rendered, scored against the source image with dataset-specific rubrics, and aggregated with deterministic caps.
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section" id="leaderboard">
+    <div class="container is-max-widescreen">
+      <div class="level">
+        <div class="level-left">
+          <h2 class="title is-3">Leaderboard</h2>
+        </div>
+        <div class="level-right">
+          <label class="field">
+            <span class="label">Split</span>
+            <span class="control select">
+              <select id="leaderboard-split"></select>
+            </span>
+          </label>
+        </div>
+      </div>
+      <div class="table-container leaderboard-box">
+        <table id="leaderboard-table" class="table is-fullwidth is-hoverable leaderboard-table">
+          <thead id="leaderboard-head"></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="section is-light" id="examples">
+    <div class="container is-max-widescreen">
+      <div class="level">
+        <div class="level-left">
+          <div>
+            <h2 class="title is-3">Recreation and Rating Examples</h2>
+            <p class="subtitle">Selected test-mini examples with source images, model-rendered outputs, and rubric scores.</p>
+          </div>
+        </div>
+        <div class="level-right">
+          <label class="field">
+            <span class="label">Dataset</span>
+            <span class="control select">
+              <select id="example-filter"></select>
+            </span>
+          </label>
+        </div>
+      </div>
+      <div id="examples-grid" class="example-grid"></div>
+    </div>
+  </section>
+
+  <section class="section" id="viewer">
+    <div class="container is-max-widescreen">
+      <div class="level viewer-header">
+        <div class="level-left">
+          <h2 class="title is-3">Data Viewer</h2>
+        </div>
+        <div class="level-right">
+          <div class="viewer-controls">
+            <label class="field">
+              <span class="label">Domain</span>
+              <span class="control select">
+                <select id="viewer-domain"></select>
+              </span>
+            </label>
+            <label class="field">
+              <span class="label">Dataset</span>
+              <span class="control select">
+                <select id="viewer-dataset"></select>
+              </span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <p class="viewer-status" id="viewer-status" aria-live="polite"></p>
+      <div id="viewer-grid" class="viewer-grid"></div>
+      <nav class="pagination is-centered viewer-pagination" role="navigation" aria-label="pagination">
+        <button id="viewer-prev" class="pagination-previous" type="button">Previous</button>
+        <span id="viewer-page" class="pagination-list viewer-page"></span>
+        <button id="viewer-next" class="pagination-next" type="button">Next</button>
+      </nav>
+    </div>
+  </section>
+</main>
+
+<div class="modal" id="image-modal" aria-hidden="true">
+  <div class="modal-background"></div>
+  <div class="modal-content">
+    <p class="image">
+      <img id="modal-image" alt="">
+    </p>
+  </div>
+  <button class="modal-close is-large" type="button" aria-label="Close image preview">Close</button>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <p>
+        This website is adapted from <a href="https://nerfies.github.io/">Nerfies</a>,
+        licensed under a <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative
+        Commons Attribution-ShareAlike 4.0 International License</a>.
+      </p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

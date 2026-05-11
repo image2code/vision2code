@@ -1,0 +1,2169 @@
+{
+  "default_split": "filtered_test",
+  "splits": [
+    "filtered_test",
+    "filtered_test_mini"
+  ],
+  "rows": [
+    {
+      "split": "filtered_test",
+      "model_slug": "qwen35_9b",
+      "model": "Qwen3.5-9B",
+      "samples": 2169,
+      "rated": 2169,
+      "missing_ratings": 0,
+      "score": 1.5963,
+      "mean_final_rating": 1.5769940065,
+      "mean_raw_score": 1.8622383587,
+      "render_success_rate": 0.7307514983863531,
+      "render_success_count": 1585,
+      "datasets": [
+        {
+          "dataset": "ChartQA",
+          "domain": "Charts&Plots",
+          "score": 3.2348717949,
+          "samples": 195,
+          "render_success_rate": 0.8974358974358975
+        },
+        {
+          "dataset": "dvqa",
+          "domain": "Charts&Plots",
+          "score": 3.2062111801,
+          "samples": 161,
+          "render_success_rate": 0.9627329192546584
+        },
+        {
+          "dataset": "figureqa",
+          "domain": "Charts&Plots",
+          "score": 2.9546583851,
+          "samples": 161,
+          "render_success_rate": 0.8322981366459627
+        },
+        {
+          "dataset": "matplotlib",
+          "domain": "Charts&Plots",
+          "score": 1.5483870968,
+          "samples": 31,
+          "render_success_rate": 0.7741935483870968
+        },
+        {
+          "dataset": "DocVQA",
+          "domain": "Documents",
+          "score": 1.247260274,
+          "samples": 292,
+          "render_success_rate": 0.6164383561643836
+        },
+        {
+          "dataset": "GEOQA_8K_R1V",
+          "domain": "Geometry",
+          "score": 1.6424657534,
+          "samples": 73,
+          "render_success_rate": 0.9726027397260274
+        },
+        {
+          "dataset": "Geoperception",
+          "domain": "Geometry",
+          "score": 1.9364963504,
+          "samples": 137,
+          "render_success_rate": 0.9197080291970803
+        },
+        {
+          "dataset": "OlympiadBench",
+          "domain": "Geometry",
+          "score": 1.3604938272,
+          "samples": 81,
+          "render_success_rate": 0.8148148148148148
+        },
+        {
+          "dataset": "geometry3k",
+          "domain": "Geometry",
+          "score": 1.4,
+          "samples": 65,
+          "render_success_rate": 0.9076923076923077
+        },
+        {
+          "dataset": "Graph-Algorithms",
+          "domain": "Graphs",
+          "score": 0.950931677,
+          "samples": 161,
+          "render_success_rate": 0.9503105590062112
+        },
+        {
+          "dataset": "GraphVQA-Swift",
+          "domain": "Graphs",
+          "score": 2.0348571429,
+          "samples": 175,
+          "render_success_rate": 0.9657142857142857
+        },
+        {
+          "dataset": "ChemVQA-2K",
+          "domain": "Science",
+          "score": 0.103125,
+          "samples": 288,
+          "render_success_rate": 0.34375
+        },
+        {
+          "dataset": "EEE-Bench",
+          "domain": "Science",
+          "score": 0.4805970149,
+          "samples": 67,
+          "render_success_rate": 0.6268656716417911
+        },
+        {
+          "dataset": "Physics",
+          "domain": "Science",
+          "score": 1.7190082645,
+          "samples": 121,
+          "render_success_rate": 0.859504132231405
+        },
+        {
+          "dataset": "spatialvlm_qa",
+          "domain": "Spatial",
+          "score": 0.1248447205,
+          "samples": 161,
+          "render_success_rate": 0.17391304347826086
+        }
+      ]
+    },
+    {
+      "split": "filtered_test_mini",
+      "model_slug": "qwen35_9b",
+      "model": "Qwen3.5-9B",
+      "samples": 539,
+      "rated": 539,
+      "missing_ratings": 0,
+      "score": 1.597,
+      "mean_final_rating": 1.5521335807,
+      "mean_raw_score": 1.8259461967,
+      "render_success_rate": 0.75139146567718,
+      "render_success_count": 405,
+      "datasets": [
+        {
+          "dataset": "ChartQA",
+          "domain": "Charts&Plots",
+          "score": 3.0977777778,
+          "samples": 45,
+          "render_success_rate": 0.8666666666666667
+        },
+        {
+          "dataset": "dvqa",
+          "domain": "Charts&Plots",
+          "score": 3.3923076923,
+          "samples": 39,
+          "render_success_rate": 0.9743589743589743
+        },
+        {
+          "dataset": "figureqa",
+          "domain": "Charts&Plots",
+          "score": 2.8282051282,
+          "samples": 39,
+          "render_success_rate": 0.8205128205128205
+        },
+        {
+          "dataset": "matplotlib",
+          "domain": "Charts&Plots",
+          "score": 1.9076923077,
+          "samples": 13,
+          "render_success_rate": 0.7692307692307693
+        },
+        {
+          "dataset": "DocVQA",
+          "domain": "Documents",
+          "score": 1.2294117647,
+          "samples": 68,
+          "render_success_rate": 0.6323529411764706
+        },
+        {
+          "dataset": "GEOQA_8K_R1V",
+          "domain": "Geometry",
+          "score": 1.9952380952,
+          "samples": 21,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "Geoperception",
+          "domain": "Geometry",
+          "score": 2.0,
+          "samples": 34,
+          "render_success_rate": 0.9117647058823529
+        },
+        {
+          "dataset": "OlympiadBench",
+          "domain": "Geometry",
+          "score": 1.2782608696,
+          "samples": 23,
+          "render_success_rate": 0.8260869565217391
+        },
+        {
+          "dataset": "geometry3k",
+          "domain": "Geometry",
+          "score": 0.980952381,
+          "samples": 21,
+          "render_success_rate": 0.9047619047619048
+        },
+        {
+          "dataset": "Graph-Algorithms",
+          "domain": "Graphs",
+          "score": 0.6948717949,
+          "samples": 39,
+          "render_success_rate": 0.9743589743589743
+        },
+        {
+          "dataset": "GraphVQA-Swift",
+          "domain": "Graphs",
+          "score": 1.7904761905,
+          "samples": 42,
+          "render_success_rate": 0.9761904761904762
+        },
+        {
+          "dataset": "ChemVQA-2K",
+          "domain": "Science",
+          "score": 0.0682539683,
+          "samples": 63,
+          "render_success_rate": 0.36507936507936506
+        },
+        {
+          "dataset": "EEE-Bench",
+          "domain": "Science",
+          "score": 0.5045454545,
+          "samples": 22,
+          "render_success_rate": 0.8636363636363636
+        },
+        {
+          "dataset": "Physics",
+          "domain": "Science",
+          "score": 2.0838709677,
+          "samples": 31,
+          "render_success_rate": 0.9032258064516129
+        },
+        {
+          "dataset": "spatialvlm_qa",
+          "domain": "Spatial",
+          "score": 0.1025641026,
+          "samples": 39,
+          "render_success_rate": 0.10256410256410256
+        }
+      ]
+    },
+    {
+      "split": "filtered_test",
+      "model_slug": "kimi_k2_5",
+      "model": "Kimi-K2.5",
+      "samples": 2169,
+      "rated": 2168,
+      "missing_ratings": 1,
+      "score": 2.9576,
+      "mean_final_rating": 2.8654520295,
+      "mean_raw_score": 3.2507910517,
+      "render_success_rate": 0.8667588750576303,
+      "render_success_count": 1880,
+      "datasets": [
+        {
+          "dataset": "ChartQA",
+          "domain": "Charts&Plots",
+          "score": 2.8564102564,
+          "samples": 195,
+          "render_success_rate": 0.676923076923077
+        },
+        {
+          "dataset": "dvqa",
+          "domain": "Charts&Plots",
+          "score": 4.4378881988,
+          "samples": 161,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "figureqa",
+          "domain": "Charts&Plots",
+          "score": 3.6863354037,
+          "samples": 161,
+          "render_success_rate": 0.968944099378882
+        },
+        {
+          "dataset": "matplotlib",
+          "domain": "Charts&Plots",
+          "score": 3.0419354839,
+          "samples": 31,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "DocVQA",
+          "domain": "Documents",
+          "score": 2.5893835616,
+          "samples": 292,
+          "render_success_rate": 0.791095890410959
+        },
+        {
+          "dataset": "GEOQA_8K_R1V",
+          "domain": "Geometry",
+          "score": 2.7726027397,
+          "samples": 73,
+          "render_success_rate": 0.9452054794520548
+        },
+        {
+          "dataset": "Geoperception",
+          "domain": "Geometry",
+          "score": 3.2321167883,
+          "samples": 137,
+          "render_success_rate": 0.9635036496350365
+        },
+        {
+          "dataset": "OlympiadBench",
+          "domain": "Geometry",
+          "score": 2.1740740741,
+          "samples": 81,
+          "render_success_rate": 0.9506172839506173
+        },
+        {
+          "dataset": "geometry3k",
+          "domain": "Geometry",
+          "score": 3.6015384615,
+          "samples": 65,
+          "render_success_rate": 0.9846153846153847
+        },
+        {
+          "dataset": "Graph-Algorithms",
+          "domain": "Graphs",
+          "score": 2.8714285714,
+          "samples": 161,
+          "render_success_rate": 0.937888198757764
+        },
+        {
+          "dataset": "GraphVQA-Swift",
+          "domain": "Graphs",
+          "score": 3.7794285714,
+          "samples": 175,
+          "render_success_rate": 0.9885714285714285
+        },
+        {
+          "dataset": "ChemVQA-2K",
+          "domain": "Science",
+          "score": 1.8114583333,
+          "samples": 288,
+          "render_success_rate": 0.7743055555555556
+        },
+        {
+          "dataset": "EEE-Bench",
+          "domain": "Science",
+          "score": 2.8014925373,
+          "samples": 67,
+          "render_success_rate": 0.9402985074626866
+        },
+        {
+          "dataset": "Physics",
+          "domain": "Science",
+          "score": 3.7157024793,
+          "samples": 121,
+          "render_success_rate": 0.9504132231404959
+        },
+        {
+          "dataset": "spatialvlm_qa",
+          "domain": "Spatial",
+          "score": 0.9925,
+          "samples": 161,
+          "render_success_rate": 0.6335403726708074
+        }
+      ]
+    },
+    {
+      "split": "filtered_test_mini",
+      "model_slug": "kimi_k2_5",
+      "model": "Kimi-K2.5",
+      "samples": 539,
+      "rated": 539,
+      "missing_ratings": 0,
+      "score": 3.0648,
+      "mean_final_rating": 2.9441558442,
+      "mean_raw_score": 3.3411595547,
+      "render_success_rate": 0.8849721706864564,
+      "render_success_count": 477,
+      "datasets": [
+        {
+          "dataset": "ChartQA",
+          "domain": "Charts&Plots",
+          "score": 3.0733333333,
+          "samples": 45,
+          "render_success_rate": 0.7111111111111111
+        },
+        {
+          "dataset": "dvqa",
+          "domain": "Charts&Plots",
+          "score": 4.4230769231,
+          "samples": 39,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "figureqa",
+          "domain": "Charts&Plots",
+          "score": 3.7666666667,
+          "samples": 39,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "matplotlib",
+          "domain": "Charts&Plots",
+          "score": 3.6307692308,
+          "samples": 13,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "DocVQA",
+          "domain": "Documents",
+          "score": 2.4382352941,
+          "samples": 68,
+          "render_success_rate": 0.7794117647058824
+        },
+        {
+          "dataset": "GEOQA_8K_R1V",
+          "domain": "Geometry",
+          "score": 3.1761904762,
+          "samples": 21,
+          "render_success_rate": 0.9523809523809523
+        },
+        {
+          "dataset": "Geoperception",
+          "domain": "Geometry",
+          "score": 3.3176470588,
+          "samples": 34,
+          "render_success_rate": 0.9411764705882353
+        },
+        {
+          "dataset": "OlympiadBench",
+          "domain": "Geometry",
+          "score": 2.3434782609,
+          "samples": 23,
+          "render_success_rate": 0.9565217391304348
+        },
+        {
+          "dataset": "geometry3k",
+          "domain": "Geometry",
+          "score": 3.4761904762,
+          "samples": 21,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "Graph-Algorithms",
+          "domain": "Graphs",
+          "score": 2.8564102564,
+          "samples": 39,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "GraphVQA-Swift",
+          "domain": "Graphs",
+          "score": 3.730952381,
+          "samples": 42,
+          "render_success_rate": 0.9761904761904762
+        },
+        {
+          "dataset": "ChemVQA-2K",
+          "domain": "Science",
+          "score": 1.7333333333,
+          "samples": 63,
+          "render_success_rate": 0.7619047619047619
+        },
+        {
+          "dataset": "EEE-Bench",
+          "domain": "Science",
+          "score": 2.7227272727,
+          "samples": 22,
+          "render_success_rate": 0.9545454545454546
+        },
+        {
+          "dataset": "Physics",
+          "domain": "Science",
+          "score": 4.1774193548,
+          "samples": 31,
+          "render_success_rate": 0.967741935483871
+        },
+        {
+          "dataset": "spatialvlm_qa",
+          "domain": "Spatial",
+          "score": 1.1051282051,
+          "samples": 39,
+          "render_success_rate": 0.6923076923076923
+        }
+      ]
+    },
+    {
+      "split": "filtered_test",
+      "model_slug": "kimi_k2_5_reasoning",
+      "model": "Kimi-K2.5+R",
+      "samples": 2169,
+      "rated": 2169,
+      "missing_ratings": 0,
+      "score": 3.2297,
+      "mean_final_rating": 3.1702166897,
+      "mean_raw_score": 3.6001567543,
+      "render_success_rate": 0.8999538958045182,
+      "render_success_count": 1952,
+      "datasets": [
+        {
+          "dataset": "ChartQA",
+          "domain": "Charts&Plots",
+          "score": 3.5543589744,
+          "samples": 195,
+          "render_success_rate": 0.8358974358974359
+        },
+        {
+          "dataset": "dvqa",
+          "domain": "Charts&Plots",
+          "score": 4.3795031056,
+          "samples": 161,
+          "render_success_rate": 0.968944099378882
+        },
+        {
+          "dataset": "figureqa",
+          "domain": "Charts&Plots",
+          "score": 4.0534161491,
+          "samples": 161,
+          "render_success_rate": 0.9440993788819876
+        },
+        {
+          "dataset": "matplotlib",
+          "domain": "Charts&Plots",
+          "score": 3.0193548387,
+          "samples": 31,
+          "render_success_rate": 0.9032258064516129
+        },
+        {
+          "dataset": "DocVQA",
+          "domain": "Documents",
+          "score": 2.626369863,
+          "samples": 292,
+          "render_success_rate": 0.8527397260273972
+        },
+        {
+          "dataset": "GEOQA_8K_R1V",
+          "domain": "Geometry",
+          "score": 2.9890410959,
+          "samples": 73,
+          "render_success_rate": 0.9041095890410958
+        },
+        {
+          "dataset": "Geoperception",
+          "domain": "Geometry",
+          "score": 3.4532846715,
+          "samples": 137,
+          "render_success_rate": 0.8613138686131386
+        },
+        {
+          "dataset": "OlympiadBench",
+          "domain": "Geometry",
+          "score": 2.7691358025,
+          "samples": 81,
+          "render_success_rate": 0.9135802469135802
+        },
+        {
+          "dataset": "geometry3k",
+          "domain": "Geometry",
+          "score": 3.8369230769,
+          "samples": 65,
+          "render_success_rate": 0.9384615384615385
+        },
+        {
+          "dataset": "Graph-Algorithms",
+          "domain": "Graphs",
+          "score": 2.8732919255,
+          "samples": 161,
+          "render_success_rate": 0.9503105590062112
+        },
+        {
+          "dataset": "GraphVQA-Swift",
+          "domain": "Graphs",
+          "score": 4.3188571429,
+          "samples": 175,
+          "render_success_rate": 0.9828571428571429
+        },
+        {
+          "dataset": "ChemVQA-2K",
+          "domain": "Science",
+          "score": 2.6399305556,
+          "samples": 288,
+          "render_success_rate": 0.9270833333333334
+        },
+        {
+          "dataset": "EEE-Bench",
+          "domain": "Science",
+          "score": 3.1253731343,
+          "samples": 67,
+          "render_success_rate": 0.8805970149253731
+        },
+        {
+          "dataset": "Physics",
+          "domain": "Science",
+          "score": 4.0504132231,
+          "samples": 121,
+          "render_success_rate": 0.9586776859504132
+        },
+        {
+          "dataset": "spatialvlm_qa",
+          "domain": "Spatial",
+          "score": 0.7559006211,
+          "samples": 161,
+          "render_success_rate": 0.7329192546583851
+        }
+      ]
+    },
+    {
+      "split": "filtered_test_mini",
+      "model_slug": "kimi_k2_5_reasoning",
+      "model": "Kimi-K2.5+R",
+      "samples": 539,
+      "rated": 539,
+      "missing_ratings": 0,
+      "score": 3.293,
+      "mean_final_rating": 3.2562152134,
+      "mean_raw_score": 3.6534972171,
+      "render_success_rate": 0.9090909090909091,
+      "render_success_count": 490,
+      "datasets": [
+        {
+          "dataset": "ChartQA",
+          "domain": "Charts&Plots",
+          "score": 3.3888888889,
+          "samples": 45,
+          "render_success_rate": 0.7777777777777778
+        },
+        {
+          "dataset": "dvqa",
+          "domain": "Charts&Plots",
+          "score": 4.5666666667,
+          "samples": 39,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "figureqa",
+          "domain": "Charts&Plots",
+          "score": 4.1487179487,
+          "samples": 39,
+          "render_success_rate": 0.9487179487179487
+        },
+        {
+          "dataset": "matplotlib",
+          "domain": "Charts&Plots",
+          "score": 3.5461538462,
+          "samples": 13,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "DocVQA",
+          "domain": "Documents",
+          "score": 2.9161764706,
+          "samples": 68,
+          "render_success_rate": 0.9117647058823529
+        },
+        {
+          "dataset": "GEOQA_8K_R1V",
+          "domain": "Geometry",
+          "score": 3.5523809524,
+          "samples": 21,
+          "render_success_rate": 0.9523809523809523
+        },
+        {
+          "dataset": "Geoperception",
+          "domain": "Geometry",
+          "score": 3.6058823529,
+          "samples": 34,
+          "render_success_rate": 0.9117647058823529
+        },
+        {
+          "dataset": "OlympiadBench",
+          "domain": "Geometry",
+          "score": 2.7130434783,
+          "samples": 23,
+          "render_success_rate": 0.9130434782608695
+        },
+        {
+          "dataset": "geometry3k",
+          "domain": "Geometry",
+          "score": 3.3095238095,
+          "samples": 21,
+          "render_success_rate": 0.8571428571428571
+        },
+        {
+          "dataset": "Graph-Algorithms",
+          "domain": "Graphs",
+          "score": 2.5923076923,
+          "samples": 39,
+          "render_success_rate": 0.8974358974358975
+        },
+        {
+          "dataset": "GraphVQA-Swift",
+          "domain": "Graphs",
+          "score": 4.0833333333,
+          "samples": 42,
+          "render_success_rate": 0.9523809523809523
+        },
+        {
+          "dataset": "ChemVQA-2K",
+          "domain": "Science",
+          "score": 3.0238095238,
+          "samples": 63,
+          "render_success_rate": 0.9682539682539683
+        },
+        {
+          "dataset": "EEE-Bench",
+          "domain": "Science",
+          "score": 2.8727272727,
+          "samples": 22,
+          "render_success_rate": 0.8636363636363636
+        },
+        {
+          "dataset": "Physics",
+          "domain": "Science",
+          "score": 4.3774193548,
+          "samples": 31,
+          "render_success_rate": 0.967741935483871
+        },
+        {
+          "dataset": "spatialvlm_qa",
+          "domain": "Spatial",
+          "score": 0.6974358974,
+          "samples": 39,
+          "render_success_rate": 0.7435897435897436
+        }
+      ]
+    },
+    {
+      "split": "filtered_test",
+      "model_slug": "qwen35_397b_a17b",
+      "model": "Qwen3.5-397B-A17B",
+      "samples": 2169,
+      "rated": 2167,
+      "missing_ratings": 2,
+      "score": 2.2684,
+      "mean_final_rating": 2.1876788186,
+      "mean_raw_score": 2.7585925242,
+      "render_success_rate": 0.8575380359612724,
+      "render_success_count": 1860,
+      "datasets": [
+        {
+          "dataset": "ChartQA",
+          "domain": "Charts&Plots",
+          "score": 3.1041025641,
+          "samples": 195,
+          "render_success_rate": 0.9333333333333333
+        },
+        {
+          "dataset": "dvqa",
+          "domain": "Charts&Plots",
+          "score": 3.1186335404,
+          "samples": 161,
+          "render_success_rate": 0.8695652173913043
+        },
+        {
+          "dataset": "figureqa",
+          "domain": "Charts&Plots",
+          "score": 3.0770186335,
+          "samples": 161,
+          "render_success_rate": 0.8074534161490683
+        },
+        {
+          "dataset": "matplotlib",
+          "domain": "Charts&Plots",
+          "score": 1.8032258065,
+          "samples": 31,
+          "render_success_rate": 0.7741935483870968
+        },
+        {
+          "dataset": "DocVQA",
+          "domain": "Documents",
+          "score": 1.3109589041,
+          "samples": 292,
+          "render_success_rate": 0.8253424657534246
+        },
+        {
+          "dataset": "GEOQA_8K_R1V",
+          "domain": "Geometry",
+          "score": 2.4479452055,
+          "samples": 73,
+          "render_success_rate": 0.9452054794520548
+        },
+        {
+          "dataset": "Geoperception",
+          "domain": "Geometry",
+          "score": 2.8540145985,
+          "samples": 137,
+          "render_success_rate": 0.9197080291970803
+        },
+        {
+          "dataset": "OlympiadBench",
+          "domain": "Geometry",
+          "score": 2.1308641975,
+          "samples": 81,
+          "render_success_rate": 0.9382716049382716
+        },
+        {
+          "dataset": "geometry3k",
+          "domain": "Geometry",
+          "score": 2.6692307692,
+          "samples": 65,
+          "render_success_rate": 0.9230769230769231
+        },
+        {
+          "dataset": "Graph-Algorithms",
+          "domain": "Graphs",
+          "score": 2.6031055901,
+          "samples": 161,
+          "render_success_rate": 0.906832298136646
+        },
+        {
+          "dataset": "GraphVQA-Swift",
+          "domain": "Graphs",
+          "score": 3.6531428571,
+          "samples": 175,
+          "render_success_rate": 0.9028571428571428
+        },
+        {
+          "dataset": "ChemVQA-2K",
+          "domain": "Science",
+          "score": 0.9583333333,
+          "samples": 288,
+          "render_success_rate": 0.9583333333333334
+        },
+        {
+          "dataset": "EEE-Bench",
+          "domain": "Science",
+          "score": 1.5560606061,
+          "samples": 67,
+          "render_success_rate": 0.9104477611940298
+        },
+        {
+          "dataset": "Physics",
+          "domain": "Science",
+          "score": 2.3595041322,
+          "samples": 121,
+          "render_success_rate": 0.8099173553719008
+        },
+        {
+          "dataset": "spatialvlm_qa",
+          "domain": "Spatial",
+          "score": 0.38,
+          "samples": 161,
+          "render_success_rate": 0.453416149068323
+        }
+      ]
+    },
+    {
+      "split": "filtered_test_mini",
+      "model_slug": "qwen35_397b_a17b",
+      "model": "Qwen3.5-397B-A17B",
+      "samples": 539,
+      "rated": 538,
+      "missing_ratings": 1,
+      "score": 2.4072,
+      "mean_final_rating": 2.3228624535,
+      "mean_raw_score": 2.8185966543,
+      "render_success_rate": 0.8794063079777366,
+      "render_success_count": 474,
+      "datasets": [
+        {
+          "dataset": "ChartQA",
+          "domain": "Charts&Plots",
+          "score": 3.22,
+          "samples": 45,
+          "render_success_rate": 0.9333333333333333
+        },
+        {
+          "dataset": "dvqa",
+          "domain": "Charts&Plots",
+          "score": 3.5051282051,
+          "samples": 39,
+          "render_success_rate": 0.9487179487179487
+        },
+        {
+          "dataset": "figureqa",
+          "domain": "Charts&Plots",
+          "score": 2.9307692308,
+          "samples": 39,
+          "render_success_rate": 0.7948717948717948
+        },
+        {
+          "dataset": "matplotlib",
+          "domain": "Charts&Plots",
+          "score": 2.4,
+          "samples": 13,
+          "render_success_rate": 0.8461538461538461
+        },
+        {
+          "dataset": "DocVQA",
+          "domain": "Documents",
+          "score": 1.5367647059,
+          "samples": 68,
+          "render_success_rate": 0.8823529411764706
+        },
+        {
+          "dataset": "GEOQA_8K_R1V",
+          "domain": "Geometry",
+          "score": 2.8142857143,
+          "samples": 21,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "Geoperception",
+          "domain": "Geometry",
+          "score": 2.8058823529,
+          "samples": 34,
+          "render_success_rate": 0.8529411764705882
+        },
+        {
+          "dataset": "OlympiadBench",
+          "domain": "Geometry",
+          "score": 2.4217391304,
+          "samples": 23,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "geometry3k",
+          "domain": "Geometry",
+          "score": 2.4428571429,
+          "samples": 21,
+          "render_success_rate": 0.9047619047619048
+        },
+        {
+          "dataset": "Graph-Algorithms",
+          "domain": "Graphs",
+          "score": 2.9333333333,
+          "samples": 39,
+          "render_success_rate": 0.8717948717948718
+        },
+        {
+          "dataset": "GraphVQA-Swift",
+          "domain": "Graphs",
+          "score": 3.6071428571,
+          "samples": 42,
+          "render_success_rate": 0.9523809523809523
+        },
+        {
+          "dataset": "ChemVQA-2K",
+          "domain": "Science",
+          "score": 0.919047619,
+          "samples": 63,
+          "render_success_rate": 0.9206349206349206
+        },
+        {
+          "dataset": "EEE-Bench",
+          "domain": "Science",
+          "score": 1.4090909091,
+          "samples": 22,
+          "render_success_rate": 0.9090909090909091
+        },
+        {
+          "dataset": "Physics",
+          "domain": "Science",
+          "score": 2.6258064516,
+          "samples": 31,
+          "render_success_rate": 0.8064516129032258
+        },
+        {
+          "dataset": "spatialvlm_qa",
+          "domain": "Spatial",
+          "score": 0.5368421053,
+          "samples": 39,
+          "render_success_rate": 0.6153846153846154
+        }
+      ]
+    },
+    {
+      "split": "filtered_test",
+      "model_slug": "qwen35_397b_a17b_reasoning",
+      "model": "Qwen3.5-397B-A17B+R",
+      "samples": 2169,
+      "rated": 2169,
+      "missing_ratings": 0,
+      "score": 2.9519,
+      "mean_final_rating": 2.858736745,
+      "mean_raw_score": 3.366834947,
+      "render_success_rate": 0.8224988473951129,
+      "render_success_count": 1784,
+      "datasets": [
+        {
+          "dataset": "ChartQA",
+          "domain": "Charts&Plots",
+          "score": 3.6451282051,
+          "samples": 195,
+          "render_success_rate": 0.9025641025641026
+        },
+        {
+          "dataset": "dvqa",
+          "domain": "Charts&Plots",
+          "score": 4.3248447205,
+          "samples": 161,
+          "render_success_rate": 0.9565217391304348
+        },
+        {
+          "dataset": "figureqa",
+          "domain": "Charts&Plots",
+          "score": 3.499378882,
+          "samples": 161,
+          "render_success_rate": 0.8571428571428571
+        },
+        {
+          "dataset": "matplotlib",
+          "domain": "Charts&Plots",
+          "score": 2.3516129032,
+          "samples": 31,
+          "render_success_rate": 0.7096774193548387
+        },
+        {
+          "dataset": "DocVQA",
+          "domain": "Documents",
+          "score": 2.0698630137,
+          "samples": 292,
+          "render_success_rate": 0.7842465753424658
+        },
+        {
+          "dataset": "GEOQA_8K_R1V",
+          "domain": "Geometry",
+          "score": 3.4589041096,
+          "samples": 73,
+          "render_success_rate": 0.9315068493150684
+        },
+        {
+          "dataset": "Geoperception",
+          "domain": "Geometry",
+          "score": 3.404379562,
+          "samples": 137,
+          "render_success_rate": 0.7737226277372263
+        },
+        {
+          "dataset": "OlympiadBench",
+          "domain": "Geometry",
+          "score": 3.0419753086,
+          "samples": 81,
+          "render_success_rate": 0.8641975308641975
+        },
+        {
+          "dataset": "geometry3k",
+          "domain": "Geometry",
+          "score": 2.7215384615,
+          "samples": 65,
+          "render_success_rate": 0.6307692307692307
+        },
+        {
+          "dataset": "Graph-Algorithms",
+          "domain": "Graphs",
+          "score": 3.2881987578,
+          "samples": 161,
+          "render_success_rate": 0.8571428571428571
+        },
+        {
+          "dataset": "GraphVQA-Swift",
+          "domain": "Graphs",
+          "score": 4.0851428571,
+          "samples": 175,
+          "render_success_rate": 0.92
+        },
+        {
+          "dataset": "ChemVQA-2K",
+          "domain": "Science",
+          "score": 1.8125,
+          "samples": 288,
+          "render_success_rate": 0.9513888888888888
+        },
+        {
+          "dataset": "EEE-Bench",
+          "domain": "Science",
+          "score": 2.9955223881,
+          "samples": 67,
+          "render_success_rate": 0.7910447761194029
+        },
+        {
+          "dataset": "Physics",
+          "domain": "Science",
+          "score": 3.3165289256,
+          "samples": 121,
+          "render_success_rate": 0.9173553719008265
+        },
+        {
+          "dataset": "spatialvlm_qa",
+          "domain": "Spatial",
+          "score": 0.2627329193,
+          "samples": 161,
+          "render_success_rate": 0.2670807453416149
+        }
+      ]
+    },
+    {
+      "split": "filtered_test_mini",
+      "model_slug": "qwen35_397b_a17b_reasoning",
+      "model": "Qwen3.5-397B-A17B+R",
+      "samples": 539,
+      "rated": 539,
+      "missing_ratings": 0,
+      "score": 3.0013,
+      "mean_final_rating": 2.8994434137,
+      "mean_raw_score": 3.4067439703,
+      "render_success_rate": 0.8163265306122449,
+      "render_success_count": 440,
+      "datasets": [
+        {
+          "dataset": "ChartQA",
+          "domain": "Charts&Plots",
+          "score": 3.9133333333,
+          "samples": 45,
+          "render_success_rate": 0.9555555555555556
+        },
+        {
+          "dataset": "dvqa",
+          "domain": "Charts&Plots",
+          "score": 4.4871794872,
+          "samples": 39,
+          "render_success_rate": 0.9487179487179487
+        },
+        {
+          "dataset": "figureqa",
+          "domain": "Charts&Plots",
+          "score": 3.841025641,
+          "samples": 39,
+          "render_success_rate": 0.9230769230769231
+        },
+        {
+          "dataset": "matplotlib",
+          "domain": "Charts&Plots",
+          "score": 2.8923076923,
+          "samples": 13,
+          "render_success_rate": 0.7692307692307693
+        },
+        {
+          "dataset": "DocVQA",
+          "domain": "Documents",
+          "score": 2.0676470588,
+          "samples": 68,
+          "render_success_rate": 0.8235294117647058
+        },
+        {
+          "dataset": "GEOQA_8K_R1V",
+          "domain": "Geometry",
+          "score": 3.519047619,
+          "samples": 21,
+          "render_success_rate": 0.8571428571428571
+        },
+        {
+          "dataset": "Geoperception",
+          "domain": "Geometry",
+          "score": 3.5147058824,
+          "samples": 34,
+          "render_success_rate": 0.7941176470588235
+        },
+        {
+          "dataset": "OlympiadBench",
+          "domain": "Geometry",
+          "score": 3.2652173913,
+          "samples": 23,
+          "render_success_rate": 0.9130434782608695
+        },
+        {
+          "dataset": "geometry3k",
+          "domain": "Geometry",
+          "score": 2.480952381,
+          "samples": 21,
+          "render_success_rate": 0.5714285714285714
+        },
+        {
+          "dataset": "Graph-Algorithms",
+          "domain": "Graphs",
+          "score": 3.0076923077,
+          "samples": 39,
+          "render_success_rate": 0.8461538461538461
+        },
+        {
+          "dataset": "GraphVQA-Swift",
+          "domain": "Graphs",
+          "score": 4.0333333333,
+          "samples": 42,
+          "render_success_rate": 0.9047619047619048
+        },
+        {
+          "dataset": "ChemVQA-2K",
+          "domain": "Science",
+          "score": 1.5873015873,
+          "samples": 63,
+          "render_success_rate": 0.9047619047619048
+        },
+        {
+          "dataset": "EEE-Bench",
+          "domain": "Science",
+          "score": 2.7227272727,
+          "samples": 22,
+          "render_success_rate": 0.7727272727272727
+        },
+        {
+          "dataset": "Physics",
+          "domain": "Science",
+          "score": 3.4161290323,
+          "samples": 31,
+          "render_success_rate": 0.9032258064516129
+        },
+        {
+          "dataset": "spatialvlm_qa",
+          "domain": "Spatial",
+          "score": 0.2717948718,
+          "samples": 39,
+          "render_success_rate": 0.1794871794871795
+        }
+      ]
+    },
+    {
+      "split": "filtered_test",
+      "model_slug": "gpt_5_4",
+      "model": "GPT-5.4",
+      "samples": 2169,
+      "rated": 2162,
+      "missing_ratings": 7,
+      "score": 4.0477,
+      "mean_final_rating": 4.0631359852,
+      "mean_raw_score": 4.2921785384,
+      "render_success_rate": 0.9810972798524665,
+      "render_success_count": 2128,
+      "datasets": [
+        {
+          "dataset": "ChartQA",
+          "domain": "Charts&Plots",
+          "score": 4.5805128205,
+          "samples": 195,
+          "render_success_rate": 0.9948717948717949
+        },
+        {
+          "dataset": "dvqa",
+          "domain": "Charts&Plots",
+          "score": 4.7322981366,
+          "samples": 161,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "figureqa",
+          "domain": "Charts&Plots",
+          "score": 4.5272151899,
+          "samples": 161,
+          "render_success_rate": 0.9627329192546584
+        },
+        {
+          "dataset": "matplotlib",
+          "domain": "Charts&Plots",
+          "score": 3.3419354839,
+          "samples": 31,
+          "render_success_rate": 0.9354838709677419
+        },
+        {
+          "dataset": "DocVQA",
+          "domain": "Documents",
+          "score": 4.2476027397,
+          "samples": 292,
+          "render_success_rate": 0.934931506849315
+        },
+        {
+          "dataset": "GEOQA_8K_R1V",
+          "domain": "Geometry",
+          "score": 3.7410958904,
+          "samples": 73,
+          "render_success_rate": 0.9726027397260274
+        },
+        {
+          "dataset": "Geoperception",
+          "domain": "Geometry",
+          "score": 4.5335766423,
+          "samples": 137,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "OlympiadBench",
+          "domain": "Geometry",
+          "score": 4.375,
+          "samples": 81,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "geometry3k",
+          "domain": "Geometry",
+          "score": 4.5453125,
+          "samples": 65,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "Graph-Algorithms",
+          "domain": "Graphs",
+          "score": 3.901242236,
+          "samples": 161,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "GraphVQA-Swift",
+          "domain": "Graphs",
+          "score": 4.7914285714,
+          "samples": 175,
+          "render_success_rate": 0.9942857142857143
+        },
+        {
+          "dataset": "ChemVQA-2K",
+          "domain": "Science",
+          "score": 3.6875,
+          "samples": 288,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "EEE-Bench",
+          "domain": "Science",
+          "score": 3.9447761194,
+          "samples": 67,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "Physics",
+          "domain": "Science",
+          "score": 4.594214876,
+          "samples": 121,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "spatialvlm_qa",
+          "domain": "Spatial",
+          "score": 1.1716981132,
+          "samples": 161,
+          "render_success_rate": 0.937888198757764
+        }
+      ]
+    },
+    {
+      "split": "filtered_test_mini",
+      "model_slug": "gpt_5_4",
+      "model": "GPT-5.4",
+      "samples": 539,
+      "rated": 536,
+      "missing_ratings": 3,
+      "score": 4.1155,
+      "mean_final_rating": 4.0938432836,
+      "mean_raw_score": 4.3001958955,
+      "render_success_rate": 0.9758812615955473,
+      "render_success_count": 526,
+      "datasets": [
+        {
+          "dataset": "ChartQA",
+          "domain": "Charts&Plots",
+          "score": 4.6044444444,
+          "samples": 45,
+          "render_success_rate": 0.9777777777777777
+        },
+        {
+          "dataset": "dvqa",
+          "domain": "Charts&Plots",
+          "score": 4.8435897436,
+          "samples": 39,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "figureqa",
+          "domain": "Charts&Plots",
+          "score": 4.2815789474,
+          "samples": 39,
+          "render_success_rate": 0.9230769230769231
+        },
+        {
+          "dataset": "matplotlib",
+          "domain": "Charts&Plots",
+          "score": 3.7076923077,
+          "samples": 13,
+          "render_success_rate": 0.9230769230769231
+        },
+        {
+          "dataset": "DocVQA",
+          "domain": "Documents",
+          "score": 4.0823529412,
+          "samples": 68,
+          "render_success_rate": 0.9117647058823529
+        },
+        {
+          "dataset": "GEOQA_8K_R1V",
+          "domain": "Geometry",
+          "score": 4.0714285714,
+          "samples": 21,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "Geoperception",
+          "domain": "Geometry",
+          "score": 4.6411764706,
+          "samples": 34,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "OlympiadBench",
+          "domain": "Geometry",
+          "score": 4.6363636364,
+          "samples": 23,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "geometry3k",
+          "domain": "Geometry",
+          "score": 4.4333333333,
+          "samples": 21,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "Graph-Algorithms",
+          "domain": "Graphs",
+          "score": 3.8102564103,
+          "samples": 39,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "GraphVQA-Swift",
+          "domain": "Graphs",
+          "score": 4.6880952381,
+          "samples": 42,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "ChemVQA-2K",
+          "domain": "Science",
+          "score": 3.8301587302,
+          "samples": 63,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "EEE-Bench",
+          "domain": "Science",
+          "score": 4.1954545455,
+          "samples": 22,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "Physics",
+          "domain": "Science",
+          "score": 4.6096774194,
+          "samples": 31,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "spatialvlm_qa",
+          "domain": "Spatial",
+          "score": 1.2973684211,
+          "samples": 39,
+          "render_success_rate": 0.9487179487179487
+        }
+      ]
+    },
+    {
+      "split": "filtered_test",
+      "model_slug": "gpt_5_4_mini",
+      "model": "GPT-5.4 Mini",
+      "samples": 2169,
+      "rated": 2168,
+      "missing_ratings": 1,
+      "score": 3.7287,
+      "mean_final_rating": 3.6783671587,
+      "mean_raw_score": 4.02912131,
+      "render_success_rate": 0.9313047487321346,
+      "render_success_count": 2020,
+      "datasets": [
+        {
+          "dataset": "ChartQA",
+          "domain": "Charts&Plots",
+          "score": 3.7020512821,
+          "samples": 195,
+          "render_success_rate": 0.8153846153846154
+        },
+        {
+          "dataset": "dvqa",
+          "domain": "Charts&Plots",
+          "score": 4.6341614907,
+          "samples": 161,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "figureqa",
+          "domain": "Charts&Plots",
+          "score": 4.375625,
+          "samples": 161,
+          "render_success_rate": 0.9316770186335404
+        },
+        {
+          "dataset": "matplotlib",
+          "domain": "Charts&Plots",
+          "score": 3.1935483871,
+          "samples": 31,
+          "render_success_rate": 0.8709677419354839
+        },
+        {
+          "dataset": "DocVQA",
+          "domain": "Documents",
+          "score": 3.3496575342,
+          "samples": 292,
+          "render_success_rate": 0.8493150684931506
+        },
+        {
+          "dataset": "GEOQA_8K_R1V",
+          "domain": "Geometry",
+          "score": 3.6232876712,
+          "samples": 73,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "Geoperception",
+          "domain": "Geometry",
+          "score": 4.4788321168,
+          "samples": 137,
+          "render_success_rate": 0.9854014598540146
+        },
+        {
+          "dataset": "OlympiadBench",
+          "domain": "Geometry",
+          "score": 3.7654320988,
+          "samples": 81,
+          "render_success_rate": 0.9876543209876543
+        },
+        {
+          "dataset": "geometry3k",
+          "domain": "Geometry",
+          "score": 4.3569230769,
+          "samples": 65,
+          "render_success_rate": 0.9692307692307692
+        },
+        {
+          "dataset": "Graph-Algorithms",
+          "domain": "Graphs",
+          "score": 3.5242236025,
+          "samples": 161,
+          "render_success_rate": 0.9875776397515528
+        },
+        {
+          "dataset": "GraphVQA-Swift",
+          "domain": "Graphs",
+          "score": 4.172,
+          "samples": 175,
+          "render_success_rate": 0.9314285714285714
+        },
+        {
+          "dataset": "ChemVQA-2K",
+          "domain": "Science",
+          "score": 3.159375,
+          "samples": 288,
+          "render_success_rate": 0.9722222222222222
+        },
+        {
+          "dataset": "EEE-Bench",
+          "domain": "Science",
+          "score": 3.4388059701,
+          "samples": 67,
+          "render_success_rate": 0.9253731343283582
+        },
+        {
+          "dataset": "Physics",
+          "domain": "Science",
+          "score": 4.1462809917,
+          "samples": 121,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "spatialvlm_qa",
+          "domain": "Spatial",
+          "score": 2.0105590062,
+          "samples": 161,
+          "render_success_rate": 0.8633540372670807
+        }
+      ]
+    },
+    {
+      "split": "filtered_test_mini",
+      "model_slug": "gpt_5_4_mini",
+      "model": "GPT-5.4 Mini",
+      "samples": 539,
+      "rated": 538,
+      "missing_ratings": 1,
+      "score": 3.847,
+      "mean_final_rating": 3.7955390335,
+      "mean_raw_score": 4.0834386617,
+      "render_success_rate": 0.9406307977736549,
+      "render_success_count": 507,
+      "datasets": [
+        {
+          "dataset": "ChartQA",
+          "domain": "Charts&Plots",
+          "score": 3.62,
+          "samples": 45,
+          "render_success_rate": 0.7777777777777778
+        },
+        {
+          "dataset": "dvqa",
+          "domain": "Charts&Plots",
+          "score": 4.7025641026,
+          "samples": 39,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "figureqa",
+          "domain": "Charts&Plots",
+          "score": 4.45,
+          "samples": 39,
+          "render_success_rate": 0.9487179487179487
+        },
+        {
+          "dataset": "matplotlib",
+          "domain": "Charts&Plots",
+          "score": 3.3923076923,
+          "samples": 13,
+          "render_success_rate": 0.8461538461538461
+        },
+        {
+          "dataset": "DocVQA",
+          "domain": "Documents",
+          "score": 3.3617647059,
+          "samples": 68,
+          "render_success_rate": 0.8529411764705882
+        },
+        {
+          "dataset": "GEOQA_8K_R1V",
+          "domain": "Geometry",
+          "score": 3.5571428571,
+          "samples": 21,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "Geoperception",
+          "domain": "Geometry",
+          "score": 4.4970588235,
+          "samples": 34,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "OlympiadBench",
+          "domain": "Geometry",
+          "score": 4.2304347826,
+          "samples": 23,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "geometry3k",
+          "domain": "Geometry",
+          "score": 4.4285714286,
+          "samples": 21,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "Graph-Algorithms",
+          "domain": "Graphs",
+          "score": 3.8871794872,
+          "samples": 39,
+          "render_success_rate": 0.9743589743589743
+        },
+        {
+          "dataset": "GraphVQA-Swift",
+          "domain": "Graphs",
+          "score": 4.0428571429,
+          "samples": 42,
+          "render_success_rate": 0.9523809523809523
+        },
+        {
+          "dataset": "ChemVQA-2K",
+          "domain": "Science",
+          "score": 3.4761904762,
+          "samples": 63,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "EEE-Bench",
+          "domain": "Science",
+          "score": 3.5636363636,
+          "samples": 22,
+          "render_success_rate": 0.9545454545454546
+        },
+        {
+          "dataset": "Physics",
+          "domain": "Science",
+          "score": 4.5129032258,
+          "samples": 31,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "spatialvlm_qa",
+          "domain": "Spatial",
+          "score": 1.9820512821,
+          "samples": 39,
+          "render_success_rate": 0.8974358974358975
+        }
+      ]
+    },
+    {
+      "split": "filtered_test",
+      "model_slug": "gpt_5_4_mini_reasoning_medium",
+      "model": "GPT-5.4 Mini+R",
+      "samples": 2169,
+      "rated": 2169,
+      "missing_ratings": 0,
+      "score": 4.0567,
+      "mean_final_rating": 4.0435223605,
+      "mean_raw_score": 4.2814661134,
+      "render_success_rate": 0.9875518672199171,
+      "render_success_count": 2142,
+      "datasets": [
+        {
+          "dataset": "ChartQA",
+          "domain": "Charts&Plots",
+          "score": 4.3887179487,
+          "samples": 195,
+          "render_success_rate": 0.9948717948717949
+        },
+        {
+          "dataset": "dvqa",
+          "domain": "Charts&Plots",
+          "score": 4.6409937888,
+          "samples": 161,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "figureqa",
+          "domain": "Charts&Plots",
+          "score": 4.7453416149,
+          "samples": 161,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "matplotlib",
+          "domain": "Charts&Plots",
+          "score": 4.0870967742,
+          "samples": 31,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "DocVQA",
+          "domain": "Documents",
+          "score": 3.9356164384,
+          "samples": 292,
+          "render_success_rate": 0.9965753424657534
+        },
+        {
+          "dataset": "GEOQA_8K_R1V",
+          "domain": "Geometry",
+          "score": 3.5671232877,
+          "samples": 73,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "Geoperception",
+          "domain": "Geometry",
+          "score": 4.6664233577,
+          "samples": 137,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "OlympiadBench",
+          "domain": "Geometry",
+          "score": 3.8518518519,
+          "samples": 81,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "geometry3k",
+          "domain": "Geometry",
+          "score": 4.5246153846,
+          "samples": 65,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "Graph-Algorithms",
+          "domain": "Graphs",
+          "score": 3.9788819876,
+          "samples": 161,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "GraphVQA-Swift",
+          "domain": "Graphs",
+          "score": 4.4965714286,
+          "samples": 175,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "ChemVQA-2K",
+          "domain": "Science",
+          "score": 3.6243055556,
+          "samples": 288,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "EEE-Bench",
+          "domain": "Science",
+          "score": 3.6641791045,
+          "samples": 67,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "Physics",
+          "domain": "Science",
+          "score": 4.258677686,
+          "samples": 121,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "spatialvlm_qa",
+          "domain": "Spatial",
+          "score": 2.4198757764,
+          "samples": 161,
+          "render_success_rate": 0.84472049689441
+        }
+      ]
+    },
+    {
+      "split": "filtered_test_mini",
+      "model_slug": "gpt_5_4_mini_reasoning_medium",
+      "model": "GPT-5.4 Mini+R",
+      "samples": 539,
+      "rated": 539,
+      "missing_ratings": 0,
+      "score": 4.1023,
+      "mean_final_rating": 4.0838589981,
+      "mean_raw_score": 4.2948794063,
+      "render_success_rate": 0.9888682745825603,
+      "render_success_count": 533,
+      "datasets": [
+        {
+          "dataset": "ChartQA",
+          "domain": "Charts&Plots",
+          "score": 4.4511111111,
+          "samples": 45,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "dvqa",
+          "domain": "Charts&Plots",
+          "score": 4.7,
+          "samples": 39,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "figureqa",
+          "domain": "Charts&Plots",
+          "score": 4.7769230769,
+          "samples": 39,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "matplotlib",
+          "domain": "Charts&Plots",
+          "score": 4.3538461538,
+          "samples": 13,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "DocVQA",
+          "domain": "Documents",
+          "score": 3.8970588235,
+          "samples": 68,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "GEOQA_8K_R1V",
+          "domain": "Geometry",
+          "score": 3.4666666667,
+          "samples": 21,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "Geoperception",
+          "domain": "Geometry",
+          "score": 4.5647058824,
+          "samples": 34,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "OlympiadBench",
+          "domain": "Geometry",
+          "score": 4.1434782609,
+          "samples": 23,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "geometry3k",
+          "domain": "Geometry",
+          "score": 4.1047619048,
+          "samples": 21,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "Graph-Algorithms",
+          "domain": "Graphs",
+          "score": 4.1153846154,
+          "samples": 39,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "GraphVQA-Swift",
+          "domain": "Graphs",
+          "score": 4.2642857143,
+          "samples": 42,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "ChemVQA-2K",
+          "domain": "Science",
+          "score": 3.7984126984,
+          "samples": 63,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "EEE-Bench",
+          "domain": "Science",
+          "score": 4.0,
+          "samples": 22,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "Physics",
+          "domain": "Science",
+          "score": 4.464516129,
+          "samples": 31,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "spatialvlm_qa",
+          "domain": "Spatial",
+          "score": 2.4333333333,
+          "samples": 39,
+          "render_success_rate": 0.8461538461538461
+        }
+      ]
+    },
+    {
+      "split": "filtered_test",
+      "model_slug": "gemini_3_1_flash_lite_preview",
+      "model": "Gemini-3.1 Flash Lite Preview",
+      "samples": 2169,
+      "rated": 2166,
+      "missing_ratings": 3,
+      "score": 3.1357,
+      "mean_final_rating": 2.8966759003,
+      "mean_raw_score": 3.3868051708,
+      "render_success_rate": 0.9160903642231443,
+      "render_success_count": 1987,
+      "datasets": [
+        {
+          "dataset": "ChartQA",
+          "domain": "Charts&Plots",
+          "score": 3.9743589744,
+          "samples": 195,
+          "render_success_rate": 0.958974358974359
+        },
+        {
+          "dataset": "dvqa",
+          "domain": "Charts&Plots",
+          "score": 4.6335403727,
+          "samples": 161,
+          "render_success_rate": 0.9875776397515528
+        },
+        {
+          "dataset": "figureqa",
+          "domain": "Charts&Plots",
+          "score": 4.18625,
+          "samples": 161,
+          "render_success_rate": 0.9937888198757764
+        },
+        {
+          "dataset": "matplotlib",
+          "domain": "Charts&Plots",
+          "score": 3.2193548387,
+          "samples": 31,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "DocVQA",
+          "domain": "Documents",
+          "score": 2.194137931,
+          "samples": 292,
+          "render_success_rate": 0.952054794520548
+        },
+        {
+          "dataset": "GEOQA_8K_R1V",
+          "domain": "Geometry",
+          "score": 3.2808219178,
+          "samples": 73,
+          "render_success_rate": 0.9863013698630136
+        },
+        {
+          "dataset": "Geoperception",
+          "domain": "Geometry",
+          "score": 3.8109489051,
+          "samples": 137,
+          "render_success_rate": 0.9854014598540146
+        },
+        {
+          "dataset": "OlympiadBench",
+          "domain": "Geometry",
+          "score": 3.2740740741,
+          "samples": 81,
+          "render_success_rate": 0.9753086419753086
+        },
+        {
+          "dataset": "geometry3k",
+          "domain": "Geometry",
+          "score": 3.8076923077,
+          "samples": 65,
+          "render_success_rate": 0.9846153846153847
+        },
+        {
+          "dataset": "Graph-Algorithms",
+          "domain": "Graphs",
+          "score": 2.9285714286,
+          "samples": 161,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "GraphVQA-Swift",
+          "domain": "Graphs",
+          "score": 4.2325714286,
+          "samples": 175,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "ChemVQA-2K",
+          "domain": "Science",
+          "score": 0.7399305556,
+          "samples": 288,
+          "render_success_rate": 0.9895833333333334
+        },
+        {
+          "dataset": "EEE-Bench",
+          "domain": "Science",
+          "score": 3.228358209,
+          "samples": 67,
+          "render_success_rate": 0.9701492537313433
+        },
+        {
+          "dataset": "Physics",
+          "domain": "Science",
+          "score": 3.4024793388,
+          "samples": 121,
+          "render_success_rate": 0.9917355371900827
+        },
+        {
+          "dataset": "spatialvlm_qa",
+          "domain": "Spatial",
+          "score": 0.1223602484,
+          "samples": 161,
+          "render_success_rate": 0.09937888198757763
+        }
+      ]
+    },
+    {
+      "split": "filtered_test_mini",
+      "model_slug": "gemini_3_1_flash_lite_preview",
+      "model": "Gemini-3.1 Flash Lite Preview",
+      "samples": 539,
+      "rated": 538,
+      "missing_ratings": 1,
+      "score": 3.1704,
+      "mean_final_rating": 2.9821561338,
+      "mean_raw_score": 3.4385315985,
+      "render_success_rate": 0.922077922077922,
+      "render_success_count": 497,
+      "datasets": [
+        {
+          "dataset": "ChartQA",
+          "domain": "Charts&Plots",
+          "score": 4.1733333333,
+          "samples": 45,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "dvqa",
+          "domain": "Charts&Plots",
+          "score": 4.7102564103,
+          "samples": 39,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "figureqa",
+          "domain": "Charts&Plots",
+          "score": 4.2102564103,
+          "samples": 39,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "matplotlib",
+          "domain": "Charts&Plots",
+          "score": 3.4769230769,
+          "samples": 13,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "DocVQA",
+          "domain": "Documents",
+          "score": 2.1388059701,
+          "samples": 68,
+          "render_success_rate": 0.9558823529411765
+        },
+        {
+          "dataset": "GEOQA_8K_R1V",
+          "domain": "Geometry",
+          "score": 3.4142857143,
+          "samples": 21,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "Geoperception",
+          "domain": "Geometry",
+          "score": 3.6647058824,
+          "samples": 34,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "OlympiadBench",
+          "domain": "Geometry",
+          "score": 3.1043478261,
+          "samples": 23,
+          "render_success_rate": 0.9130434782608695
+        },
+        {
+          "dataset": "geometry3k",
+          "domain": "Geometry",
+          "score": 3.6428571429,
+          "samples": 21,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "Graph-Algorithms",
+          "domain": "Graphs",
+          "score": 3.2205128205,
+          "samples": 39,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "GraphVQA-Swift",
+          "domain": "Graphs",
+          "score": 4.2880952381,
+          "samples": 42,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "ChemVQA-2K",
+          "domain": "Science",
+          "score": 0.7301587302,
+          "samples": 63,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "EEE-Bench",
+          "domain": "Science",
+          "score": 2.9227272727,
+          "samples": 22,
+          "render_success_rate": 0.9545454545454546
+        },
+        {
+          "dataset": "Physics",
+          "domain": "Science",
+          "score": 3.8129032258,
+          "samples": 31,
+          "render_success_rate": 1.0
+        },
+        {
+          "dataset": "spatialvlm_qa",
+          "domain": "Spatial",
+          "score": 0.0461538462,
+          "samples": 39,
+          "render_success_rate": 0.07692307692307693
+        }
+      ]
+    }
+  ]
+}

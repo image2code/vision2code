@@ -1,0 +1,130 @@
+{
+  "title": "Vision2Code: A Multi-Domain Benchmark for Evaluating Image-to-Code Generation",
+  "figures": {
+    "benchmark_examples": "static/images/figures/benchmark_examples.png",
+    "dataset_stats_horizontal": "static/images/figures/dataset_stats_horizontal.png",
+    "rubric_scoring_pipeline": "static/images/figures/rubric_scoring_pipeline.png",
+    "correlation_1_heatmap": "static/images/figures/correlation_1_heatmap.png",
+    "render_success_rate": "static/images/figures/render_success_rate.png"
+  },
+  "benchmark": {
+    "full_test_samples": 2169,
+    "test_mini_samples": 539,
+    "domains": [
+      {
+        "name": "Charts&Plots",
+        "count": 548
+      },
+      {
+        "name": "Documents",
+        "count": 292
+      },
+      {
+        "name": "Geometry",
+        "count": 356
+      },
+      {
+        "name": "Graphs",
+        "count": 336
+      },
+      {
+        "name": "Science",
+        "count": 476
+      },
+      {
+        "name": "Spatial",
+        "count": 161
+      }
+    ],
+    "datasets": [
+      {
+        "name": "ChartQA",
+        "domain": "Charts&Plots",
+        "count": 195
+      },
+      {
+        "name": "ChemVQA-2K",
+        "domain": "Science",
+        "count": 288
+      },
+      {
+        "name": "DocVQA",
+        "domain": "Documents",
+        "count": 292
+      },
+      {
+        "name": "EEE-Bench",
+        "domain": "Science",
+        "count": 67
+      },
+      {
+        "name": "GEOQA_8K_R1V",
+        "domain": "Geometry",
+        "count": 73
+      },
+      {
+        "name": "Geoperception",
+        "domain": "Geometry",
+        "count": 137
+      },
+      {
+        "name": "Graph-Algorithms",
+        "domain": "Graphs",
+        "count": 161
+      },
+      {
+        "name": "GraphVQA-Swift",
+        "domain": "Graphs",
+        "count": 175
+      },
+      {
+        "name": "OlympiadBench",
+        "domain": "Geometry",
+        "count": 81
+      },
+      {
+        "name": "Physics",
+        "domain": "Science",
+        "count": 121
+      },
+      {
+        "name": "dvqa",
+        "domain": "Charts&Plots",
+        "count": 161
+      },
+      {
+        "name": "figureqa",
+        "domain": "Charts&Plots",
+        "count": 161
+      },
+      {
+        "name": "geometry3k",
+        "domain": "Geometry",
+        "count": 65
+      },
+      {
+        "name": "matplotlib",
+        "domain": "Charts&Plots",
+        "count": 31
+      },
+      {
+        "name": "spatialvlm_qa",
+        "domain": "Spatial",
+        "count": 161
+      }
+    ],
+    "dataset_count": 15,
+    "domain_count": 6
+  },
+  "evaluation": {
+    "human_alignment": {
+      "n": 539,
+      "pearson": 0.7227804306,
+      "spearman": 0.7033082238,
+      "mean_human": 2.4564007421,
+      "mean_metric": 2.3782931354
+    },
+    "rating_scale": "0 to 5",
+    "primary_metric": "rubric-weighted rendered recreation score"
+  }
+}

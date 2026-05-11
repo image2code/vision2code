@@ -1,0 +1,889 @@
+{
+  "examples": [
+    {
+      "id": "rating-examples-testmini-selected-chartqa-ex4",
+      "dataset": "ChartQA",
+      "domain": "Charts&Plots",
+      "question_folder": "ChartQA_test_001998_0eb2eb2d5035",
+      "question": "How many people were waiting for an intestine donation in the United States as of September 6, 2020?",
+      "score_median": 4.6,
+      "score_spread": 1.5,
+      "rendered_count": 9,
+      "rated_count": 9,
+      "image": "static/images/examples/rating_examples_testmini_selected_chartqa_ex4.png",
+      "scores": [
+        {
+          "model": "Qwen3.5-9B",
+          "score": 3.5,
+          "rendered": true
+        },
+        {
+          "model": "Kimi-K2.5",
+          "score": 4.6,
+          "rendered": true
+        },
+        {
+          "model": "Kimi-K2.5+R",
+          "score": 4.3,
+          "rendered": true
+        },
+        {
+          "model": "Qwen3.5-397B-A17B",
+          "score": 3.5,
+          "rendered": true
+        },
+        {
+          "model": "Qwen3.5-397B-A17B+R",
+          "score": 4.6,
+          "rendered": true
+        },
+        {
+          "model": "GPT-5.4",
+          "score": 4.8,
+          "rendered": true
+        },
+        {
+          "model": "GPT-5.4 Mini",
+          "score": 5.0,
+          "rendered": true
+        },
+        {
+          "model": "GPT-5.4 Mini+R",
+          "score": 4.8,
+          "rendered": true
+        },
+        {
+          "model": "Gemini-3.1 Flash Lite Preview",
+          "score": 4.6,
+          "rendered": true
+        }
+      ]
+    },
+    {
+      "id": "rating-examples-testmini-selected-dvqa-ex1",
+      "dataset": "dvqa",
+      "domain": "Charts&Plots",
+      "question_folder": "dvqa_test_000672_d35cff119bb9",
+      "question": "How many bars are there per group?",
+      "score_median": 2.5,
+      "score_spread": 4.0,
+      "rendered_count": 9,
+      "rated_count": 9,
+      "image": "static/images/examples/rating_examples_testmini_selected_dvqa_ex1.png",
+      "scores": [
+        {
+          "model": "Qwen3.5-9B",
+          "score": 1.0,
+          "rendered": true
+        },
+        {
+          "model": "Kimi-K2.5",
+          "score": 2.5,
+          "rendered": true
+        },
+        {
+          "model": "Kimi-K2.5+R",
+          "score": 2.5,
+          "rendered": true
+        },
+        {
+          "model": "Qwen3.5-397B-A17B",
+          "score": 2.5,
+          "rendered": true
+        },
+        {
+          "model": "Qwen3.5-397B-A17B+R",
+          "score": 4.3,
+          "rendered": true
+        },
+        {
+          "model": "GPT-5.4",
+          "score": 5.0,
+          "rendered": true
+        },
+        {
+          "model": "GPT-5.4 Mini",
+          "score": 2.5,
+          "rendered": true
+        },
+        {
+          "model": "GPT-5.4 Mini+R",
+          "score": 2.5,
+          "rendered": true
+        },
+        {
+          "model": "Gemini-3.1 Flash Lite Preview",
+          "score": 5.0,
+          "rendered": true
+        }
+      ]
+    },
+    {
+      "id": "rating-examples-testmini-selected-figureqa-ex1",
+      "dataset": "figureqa",
+      "domain": "Charts&Plots",
+      "question_folder": "figureqa_test_001541_806c0f6add40",
+      "question": "Does Maroon have the maximum area under the curve?",
+      "score_median": 4.5,
+      "score_spread": 3.1,
+      "rendered_count": 9,
+      "rated_count": 9,
+      "image": "static/images/examples/rating_examples_testmini_selected_figureqa_ex1.png",
+      "scores": [
+        {
+          "model": "Qwen3.5-9B",
+          "score": 2.5,
+          "rendered": true
+        },
+        {
+          "model": "Kimi-K2.5",
+          "score": 4.2,
+          "rendered": true
+        },
+        {
+          "model": "Kimi-K2.5+R",
+          "score": 4.5,
+          "rendered": true
+        },
+        {
+          "model": "Qwen3.5-397B-A17B",
+          "score": 1.9,
+          "rendered": true
+        },
+        {
+          "model": "Qwen3.5-397B-A17B+R",
+          "score": 4.2,
+          "rendered": true
+        },
+        {
+          "model": "GPT-5.4",
+          "score": 4.7,
+          "rendered": true
+        },
+        {
+          "model": "GPT-5.4 Mini",
+          "score": 5.0,
+          "rendered": true
+        },
+        {
+          "model": "GPT-5.4 Mini+R",
+          "score": 4.8,
+          "rendered": true
+        },
+        {
+          "model": "Gemini-3.1 Flash Lite Preview",
+          "score": 4.7,
+          "rendered": true
+        }
+      ]
+    },
+    {
+      "id": "rating-examples-testmini-selected-matplotlib-ex5",
+      "dataset": "matplotlib",
+      "domain": "Charts&Plots",
+      "question_folder": "matplotlib_test_000118_07133dee413c",
+      "question": "Write Python/Matplotlib code that recreates this figure as faithfully as possible.",
+      "score_median": 3.6,
+      "score_spread": 5.0,
+      "rendered_count": 8,
+      "rated_count": 9,
+      "image": "static/images/examples/rating_examples_testmini_selected_matplotlib_ex5.png",
+      "scores": [
+        {
+          "model": "Qwen3.5-9B",
+          "score": 0.0,
+          "rendered": false
+        },
+        {
+          "model": "Kimi-K2.5",
+          "score": 2.7,
+          "rendered": true
+        },
+        {
+          "model": "Kimi-K2.5+R",
+          "score": 2.7,
+          "rendered": true
+        },
+        {
+          "model": "Qwen3.5-397B-A17B",
+          "score": 2.2,
+          "rendered": true
+        },
+        {
+          "model": "Qwen3.5-397B-A17B+R",
+          "score": 3.6,
+          "rendered": true
+        },
+        {
+          "model": "GPT-5.4",
+          "score": 4.5,
+          "rendered": true
+        },
+        {
+          "model": "GPT-5.4 Mini",
+          "score": 4.3,
+          "rendered": true
+        },
+        {
+          "model": "GPT-5.4 Mini+R",
+          "score": 5.0,
+          "rendered": true
+        },
+        {
+          "model": "Gemini-3.1 Flash Lite Preview",
+          "score": 3.6,
+          "rendered": true
+        }
+      ]
+    },
+    {
+      "id": "rating-examples-testmini-selected-docvqa-rank1",
+      "dataset": "DocVQA",
+      "domain": "Documents",
+      "question_folder": "DocVQA_test_002075_ae8af4ef96fc",
+      "question": "What is the page number of the document?",
+      "score_median": 2.1,
+      "score_spread": 5.0,
+      "rendered_count": 9,
+      "rated_count": 9,
+      "image": "static/images/examples/rating_examples_testmini_selected_docvqa_rank1.png",
+      "scores": [
+        {
+          "model": "Qwen3.5-9B",
+          "score": 0.5,
+          "rendered": true
+        },
+        {
+          "model": "Kimi-K2.5",
+          "score": 4.7,
+          "rendered": true
+        },
+        {
+          "model": "Kimi-K2.5+R",
+          "score": 4.7,
+          "rendered": true
+        },
+        {
+          "model": "Qwen3.5-397B-A17B",
+          "score": 0.5,
+          "rendered": true
+        },
+        {
+          "model": "Qwen3.5-397B-A17B+R",
+          "score": 0.0,
+          "rendered": true
+        },
+        {
+          "model": "GPT-5.4",
+          "score": 5.0,
+          "rendered": true
+        },
+        {
+          "model": "GPT-5.4 Mini",
+          "score": 2.1,
+          "rendered": true
+        },
+        {
+          "model": "GPT-5.4 Mini+R",
+          "score": 4.8,
+          "rendered": true
+        },
+        {
+          "model": "Gemini-3.1 Flash Lite Preview",
+          "score": 0.5,
+          "rendered": true
+        }
+      ]
+    },
+    {
+      "id": "rating-examples-testmini-selected-geoqa-8k-r1v-ex3",
+      "dataset": "GEOQA_8K_R1V",
+      "domain": "Geometry",
+      "question_folder": "GEOQA_8K_R1V_test_000456_613ad05893e7",
+      "question": "<image>As shown in the figure, PA, PB are tangent to circle O at points A, B, point C is a point on circle O, and angle P = 36.0, then angle ACB = ()",
+      "score_median": 2.5,
+      "score_spread": 4.0,
+      "rendered_count": 9,
+      "rated_count": 9,
+      "image": "static/images/examples/rating_examples_testmini_selected_geoqa_8k_r1v_ex3.png",
+      "scores": [
+        {
+          "model": "Qwen3.5-9B",
+          "score": 2.3,
+          "rendered": true
+        },
+        {
+          "model": "Kimi-K2.5",
+          "score": 1.0,
+          "rendered": true
+        },
+        {
+          "model": "Kimi-K2.5+R",
+          "score": 4.4,
+          "rendered": true
+        },
+        {
+          "model": "Qwen3.5-397B-A17B",
+          "score": 2.2,
+          "rendered": true
+        },
+        {
+          "model": "Qwen3.5-397B-A17B+R",
+          "score": 4.4,
+          "rendered": true
+        },
+        {
+          "model": "GPT-5.4",
+          "score": 5.0,
+          "rendered": true
+        },
+        {
+          "model": "GPT-5.4 Mini",
+          "score": 4.1,
+          "rendered": true
+        },
+        {
+          "model": "GPT-5.4 Mini+R",
+          "score": 2.5,
+          "rendered": true
+        },
+        {
+          "model": "Gemini-3.1 Flash Lite Preview",
+          "score": 2.5,
+          "rendered": true
+        }
+      ]
+    },
+    {
+      "id": "rating-examples-testmini-selected-geoperception-ex2",
+      "dataset": "Geoperception",
+      "domain": "Geometry",
+      "question_folder": "Geoperception_test_000199_5e735c3c0c5e",
+      "question": "What is the point lying on circle with center F?",
+      "score_median": 4.7,
+      "score_spread": 4.8,
+      "rendered_count": 9,
+      "rated_count": 9,
+      "image": "static/images/examples/rating_examples_testmini_selected_geoperception_ex2.png",
+      "scores": [
+        {
+          "model": "Qwen3.5-9B",
+          "score": 0.2,
+          "rendered": true
+        },
+        {
+          "model": "Kimi-K2.5",
+          "score": 4.7,
+          "rendered": true
+        },
+        {
+          "model": "Kimi-K2.5+R",
+          "score": 5.0,
+          "rendered": true
+        },
+        {
+          "model": "Qwen3.5-397B-A17B",
+          "score": 1.7,
+          "rendered": true
+        },
+        {
+          "model": "Qwen3.5-397B-A17B+R",
+          "score": 4.7,
+          "rendered": true
+        },
+        {
+          "model": "GPT-5.4",
+          "score": 4.5,
+          "rendered": true
+        },
+        {
+          "model": "GPT-5.4 Mini",
+          "score": 5.0,
+          "rendered": true
+        },
+        {
+          "model": "GPT-5.4 Mini+R",
+          "score": 5.0,
+          "rendered": true
+        },
+        {
+          "model": "Gemini-3.1 Flash Lite Preview",
+          "score": 4.0,
+          "rendered": true
+        }
+      ]
+    },
+    {
+      "id": "rating-examples-testmini-selected-olympiadbench-ex1",
+      "dataset": "OlympiadBench",
+      "domain": "Geometry",
+      "question_folder": "OlympiadBench_test_001384_0f1c59a7feda",
+      "question": "$\u5982\u56fe\uff0c\u4e09\u68f1\u67f1ABC-A_{1}B_{1}C_{1}\u4e2d\uff0c\u5e95\u9762ABC\u4e3a\u6b63\u4e09\u89d2\u5f62\uff0c\u4fa7\u68f1\u4e0e\u5e95\u9762\u5782\u76f4\uff0c\u5b83\u7684\u6240\u6709\u68f1\u957f\u90fd\u4e3a2\uff0cE\uff0cF\uff0cG\u5206\u522b\u4e3aB_{1}C_{1}\uff0cA_{1}B_{1}\uff0cAB\u7684\u4e2d\u70b9.$<image_1>\n$(1)\u6c42\u8bc1\uff1a\u5e73\u9762A_{1}C_{1}G\\parallel \u5e73\u9762BEF\uff1b$",
+      "score_median": 4.0,
+      "score_spread": 5.0,
+      "rendered_count": 9,
+      "rated_count": 9,
+      "image": "static/images/examples/rating_examples_testmini_selected_olympiadbench_ex1.png",
+      "scores": [
+        {
+          "model": "Qwen3.5-9B",
+          "score": 2.5,
+          "rendered": true
+        },
+        {
+          "model": "Kimi-K2.5",
+          "score": 1.0,
+          "rendered": true
+        },
+        {
+          "model": "Kimi-K2.5+R",
+          "score": 1.8,
+          "rendered": true
+        },
+        {
+          "model": "Qwen3.5-397B-A17B",
+          "score": 0.0,
+          "rendered": true
+        },
+        {
+          "model": "Qwen3.5-397B-A17B+R",
+          "score": 4.2,
+          "rendered": true
+        },
+        {
+          "model": "GPT-5.4",
+          "score": 5.0,
+          "rendered": true
+        },
+        {
+          "model": "GPT-5.4 Mini",
+          "score": 4.6,
+          "rendered": true
+        },
+        {
+          "model": "GPT-5.4 Mini+R",
+          "score": 4.0,
+          "rendered": true
+        },
+        {
+          "model": "Gemini-3.1 Flash Lite Preview",
+          "score": 4.0,
+          "rendered": true
+        }
+      ]
+    },
+    {
+      "id": "rating-examples-testmini-selected-geometry3k-ex5",
+      "dataset": "geometry3k",
+      "domain": "Geometry",
+      "question_folder": "geometry3k_test_000065_885a3348289e",
+      "question": "<image>In the figure, line $l$ is parallel to line $m$. Line $n$ intersects both $l$ and $m$. Which of the following lists includes all of the angles that are supplementary to $ \u22201 $?",
+      "score_median": 4.3,
+      "score_spread": 4.0,
+      "rendered_count": 9,
+      "rated_count": 9,
+      "image": "static/images/examples/rating_examples_testmini_selected_geometry3k_ex5.png",
+      "scores": [
+        {
+          "model": "Qwen3.5-9B",
+          "score": 1.0,
+          "rendered": true
+        },
+        {
+          "model": "Kimi-K2.5",
+          "score": 4.4,
+          "rendered": true
+        },
+        {
+          "model": "Kimi-K2.5+R",
+          "score": 4.4,
+          "rendered": true
+        },
+        {
+          "model": "Qwen3.5-397B-A17B",
+          "score": 3.9,
+          "rendered": true
+        },
+        {
+          "model": "Qwen3.5-397B-A17B+R",
+          "score": 5.0,
+          "rendered": true
+        },
+        {
+          "model": "GPT-5.4",
+          "score": 4.7,
+          "rendered": true
+        },
+        {
+          "model": "GPT-5.4 Mini",
+          "score": 4.3,
+          "rendered": true
+        },
+        {
+          "model": "GPT-5.4 Mini+R",
+          "score": 3.7,
+          "rendered": true
+        },
+        {
+          "model": "Gemini-3.1 Flash Lite Preview",
+          "score": 1.5,
+          "rendered": true
+        }
+      ]
+    },
+    {
+      "id": "rating-examples-testmini-selected-graph-algorithms-ex1",
+      "dataset": "Graph-Algorithms",
+      "domain": "Graphs",
+      "question_folder": "Graph-Algorithms_test_000593_292194d09ef8",
+      "question": "Total weight of a minimum spanning tree? <image_start>[problem_image_1]<image_end>",
+      "score_median": 3.6,
+      "score_spread": 5.0,
+      "rendered_count": 9,
+      "rated_count": 9,
+      "image": "static/images/examples/rating_examples_testmini_selected_graph_algorithms_ex1.png",
+      "scores": [
+        {
+          "model": "Qwen3.5-9B",
+          "score": 0.0,
+          "rendered": true
+        },
+        {
+          "model": "Kimi-K2.5",
+          "score": 3.6,
+          "rendered": true
+        },
+        {
+          "model": "Kimi-K2.5+R",
+          "score": 4.0,
+          "rendered": true
+        },
+        {
+          "model": "Qwen3.5-397B-A17B",
+          "score": 1.0,
+          "rendered": true
+        },
+        {
+          "model": "Qwen3.5-397B-A17B+R",
+          "score": 2.0,
+          "rendered": true
+        },
+        {
+          "model": "GPT-5.4",
+          "score": 3.6,
+          "rendered": true
+        },
+        {
+          "model": "GPT-5.4 Mini",
+          "score": 5.0,
+          "rendered": true
+        },
+        {
+          "model": "GPT-5.4 Mini+R",
+          "score": 5.0,
+          "rendered": true
+        },
+        {
+          "model": "Gemini-3.1 Flash Lite Preview",
+          "score": 5.0,
+          "rendered": true
+        }
+      ]
+    },
+    {
+      "id": "rating-examples-testmini-selected-graphvqa-swift-ex4",
+      "dataset": "GraphVQA-Swift",
+      "domain": "Graphs",
+      "question_folder": "GraphVQA-Swift_test_002206_892c25372607",
+      "question": "Is the graph directed?",
+      "score_median": 5.0,
+      "score_spread": 5.0,
+      "rendered_count": 9,
+      "rated_count": 9,
+      "image": "static/images/examples/rating_examples_testmini_selected_graphvqa_swift_ex4.png",
+      "scores": [
+        {
+          "model": "Qwen3.5-9B",
+          "score": 0.0,
+          "rendered": true
+        },
+        {
+          "model": "Kimi-K2.5",
+          "score": 5.0,
+          "rendered": true
+        },
+        {
+          "model": "Kimi-K2.5+R",
+          "score": 5.0,
+          "rendered": true
+        },
+        {
+          "model": "Qwen3.5-397B-A17B",
+          "score": 4.0,
+          "rendered": true
+        },
+        {
+          "model": "Qwen3.5-397B-A17B+R",
+          "score": 5.0,
+          "rendered": true
+        },
+        {
+          "model": "GPT-5.4",
+          "score": 5.0,
+          "rendered": true
+        },
+        {
+          "model": "GPT-5.4 Mini",
+          "score": 5.0,
+          "rendered": true
+        },
+        {
+          "model": "GPT-5.4 Mini+R",
+          "score": 5.0,
+          "rendered": true
+        },
+        {
+          "model": "Gemini-3.1 Flash Lite Preview",
+          "score": 5.0,
+          "rendered": true
+        }
+      ]
+    },
+    {
+      "id": "rating-examples-testmini-selected-chemvqa-2k-ex3",
+      "dataset": "ChemVQA-2K",
+      "domain": "Science",
+      "question_folder": "ChemVQA-2K_test_003666_0e974d2e28bc",
+      "question": "What is the molecular formula of this molecule?",
+      "score_median": 2.5,
+      "score_spread": 5.0,
+      "rendered_count": 9,
+      "rated_count": 9,
+      "image": "static/images/examples/rating_examples_testmini_selected_chemvqa_2k_ex3.png",
+      "scores": [
+        {
+          "model": "Qwen3.5-9B",
+          "score": 0.0,
+          "rendered": true
+        },
+        {
+          "model": "Kimi-K2.5",
+          "score": 1.4,
+          "rendered": true
+        },
+        {
+          "model": "Kimi-K2.5+R",
+          "score": 4.2,
+          "rendered": true
+        },
+        {
+          "model": "Qwen3.5-397B-A17B",
+          "score": 0.5,
+          "rendered": true
+        },
+        {
+          "model": "Qwen3.5-397B-A17B+R",
+          "score": 2.5,
+          "rendered": true
+        },
+        {
+          "model": "GPT-5.4",
+          "score": 5.0,
+          "rendered": true
+        },
+        {
+          "model": "GPT-5.4 Mini",
+          "score": 4.6,
+          "rendered": true
+        },
+        {
+          "model": "GPT-5.4 Mini+R",
+          "score": 5.0,
+          "rendered": true
+        },
+        {
+          "model": "Gemini-3.1 Flash Lite Preview",
+          "score": 1.0,
+          "rendered": true
+        }
+      ]
+    },
+    {
+      "id": "rating-examples-testmini-selected-eee-bench-ex1",
+      "dataset": "EEE-Bench",
+      "domain": "Science",
+      "question_folder": "EEE-Bench_test_000469_c62e63c62bff",
+      "question": "Hint: Please answer the question and provide the correct option letter, e.g., A, B, C, D, at the end.\nQuestion: Regarding the calculation formulas for the current \\( I \\) in the circuit shown in figure, the incorrect one is ( ).\nChoices\nA. \\( \\frac{\\dot{U_R}}{R} \\)  \nB. \\( \\frac{\\dot{U_C}}{j\\omega C} \\)  \nC. \\( j\\omega C \\dot{U_C} \\)  \nD. \\( \\frac{\\dot{U}}{R + _x000C_rac{1}{j\\omega C}} \\)",
+      "score_median": 2.3,
+      "score_spread": 5.0,
+      "rendered_count": 9,
+      "rated_count": 9,
+      "image": "static/images/examples/rating_examples_testmini_selected_eee_bench_ex1.png",
+      "scores": [
+        {
+          "model": "Qwen3.5-9B",
+          "score": 0.0,
+          "rendered": true
+        },
+        {
+          "model": "Kimi-K2.5",
+          "score": 1.9,
+          "rendered": true
+        },
+        {
+          "model": "Kimi-K2.5+R",
+          "score": 2.3,
+          "rendered": true
+        },
+        {
+          "model": "Qwen3.5-397B-A17B",
+          "score": 1.5,
+          "rendered": true
+        },
+        {
+          "model": "Qwen3.5-397B-A17B+R",
+          "score": 4.8,
+          "rendered": true
+        },
+        {
+          "model": "GPT-5.4",
+          "score": 4.6,
+          "rendered": true
+        },
+        {
+          "model": "GPT-5.4 Mini",
+          "score": 4.6,
+          "rendered": true
+        },
+        {
+          "model": "GPT-5.4 Mini+R",
+          "score": 5.0,
+          "rendered": true
+        },
+        {
+          "model": "Gemini-3.1 Flash Lite Preview",
+          "score": 1.5,
+          "rendered": true
+        }
+      ]
+    },
+    {
+      "id": "rating-examples-testmini-selected-physics-ex5",
+      "dataset": "Physics",
+      "domain": "Science",
+      "question_folder": "Physics_test_000719_dda789f918a0",
+      "question": "Consider the scenario depicted in the image below, where a mass $m_1 = 4.5$ kg traveling at a velocity of $v_1 = 3.1$ m/s is on a collision course with a second mass, $m_2 = 1.0$ kg, moving in the opposite direction with a velocity of $v_2 = -3.4$ m/s. If the two masses undergo a perfectly inelastic collision, what will be their final velocities?\n<image_start>[problem_image_1]<image_end>",
+      "score_median": 4.3,
+      "score_spread": 3.4,
+      "rendered_count": 9,
+      "rated_count": 9,
+      "image": "static/images/examples/rating_examples_testmini_selected_physics_ex5.png",
+      "scores": [
+        {
+          "model": "Qwen3.5-9B",
+          "score": 1.6,
+          "rendered": true
+        },
+        {
+          "model": "Kimi-K2.5",
+          "score": 5.0,
+          "rendered": true
+        },
+        {
+          "model": "Kimi-K2.5+R",
+          "score": 4.8,
+          "rendered": true
+        },
+        {
+          "model": "Qwen3.5-397B-A17B",
+          "score": 3.8,
+          "rendered": true
+        },
+        {
+          "model": "Qwen3.5-397B-A17B+R",
+          "score": 1.6,
+          "rendered": true
+        },
+        {
+          "model": "GPT-5.4",
+          "score": 5.0,
+          "rendered": true
+        },
+        {
+          "model": "GPT-5.4 Mini",
+          "score": 5.0,
+          "rendered": true
+        },
+        {
+          "model": "GPT-5.4 Mini+R",
+          "score": 4.3,
+          "rendered": true
+        },
+        {
+          "model": "Gemini-3.1 Flash Lite Preview",
+          "score": 4.3,
+          "rendered": true
+        }
+      ]
+    },
+    {
+      "id": "rating-examples-testmini-selected-spatialvlm-qa-ex2",
+      "dataset": "spatialvlm_qa",
+      "domain": "Spatial",
+      "question_folder": "spatialvlm_qa_test_001716_9f86d5fbdb47",
+      "question": "Measure the horizontal distance from the green cube to the purple sphere.",
+      "score_median": 1.0,
+      "score_spread": 3.5,
+      "rendered_count": 7,
+      "rated_count": 9,
+      "image": "static/images/examples/rating_examples_testmini_selected_spatialvlm_qa_ex2.png",
+      "scores": [
+        {
+          "model": "Qwen3.5-9B",
+          "score": 0.0,
+          "rendered": false
+        },
+        {
+          "model": "Kimi-K2.5",
+          "score": 2.0,
+          "rendered": true
+        },
+        {
+          "model": "Kimi-K2.5+R",
+          "score": 2.0,
+          "rendered": true
+        },
+        {
+          "model": "Qwen3.5-397B-A17B",
+          "score": 0.0,
+          "rendered": true
+        },
+        {
+          "model": "Qwen3.5-397B-A17B+R",
+          "score": 1.0,
+          "rendered": true
+        },
+        {
+          "model": "GPT-5.4",
+          "score": 1.0,
+          "rendered": true
+        },
+        {
+          "model": "GPT-5.4 Mini",
+          "score": 2.0,
+          "rendered": true
+        },
+        {
+          "model": "GPT-5.4 Mini+R",
+          "score": 3.5,
+          "rendered": true
+        },
+        {
+          "model": "Gemini-3.1 Flash Lite Preview",
+          "score": 0.0,
+          "rendered": false
+        }
+      ]
+    }
+  ]
+}
